@@ -39,11 +39,23 @@ Feature-based: `src/features/<name>/` is the home for all domain logic.
 **Providers:** `providers/<name>.tsx` wrappers are thin — they just render the feature's `<NameProvider>`.
 
 ## Coding Conventions
+- **No manual memoization** — never use `useMemo`, `useCallback`, or `React.memo`. The React Compiler handles this automatically.
 - **Explicit return types** on all functions and event handlers
 - **Single source of truth for colors** — use `SPHERE_META[type].color`, never a parallel color map
 - **Module-level style helpers** — extract repeated inline style objects to pure functions (e.g. `glowStyle()`) or `const` objects rather than inlining in JSX
 - **Type predicates at filter boundaries** — use `(n): n is T & { field: V }` to narrow types once so `!` non-null assertions are never needed downstream
 - **Shared easing constant** — `const EASE = [0.23, 1, 0.32, 1] as const` at module level, never inlined repeatedly
+
+## Business Logic
+
+### Sphere Grid (Dokkaebi's Bag)
+- **Graph topology**: each non-hub node has **at most 2 edges** (linear chains). Dead-end nodes have 1. The hub/start is the only node allowed more connections (one per arm). No branching within an arm.
+- **Arms**: 4 linear arms radiating from the hub, one per stat type (power=STR, speed=AGI, defense=CON, energy=STA). Each arm is ~4 nodes long.
+- **AP movement cost**: clicking any node finds the shortest path (BFS) and sums per-hop costs:
+  - New node (never visited): **1 AP**
+  - nth revisit-move overall: **ceil(n/3) AP** — so revisits 1–3 cost 1 AP each, 4–6 cost 2 each, etc.
+- **AP earning**: 2 AP per `LOG_WORKOUT` dispatch.
+- **Moving ≠ activating**: reaching a node (spending AP) only marks it visited. Filling a sphere requires a separate explicit action spending spheres + coins.
 
 ## Layout Rules
 - **Shell layout must use nested flex containers**: a top-level `flex-col` for the header + body, then an inner `flex-row` for sidebar + main content. Never put header, sidebar, and main content in a single flex container that switches direction at breakpoints — the header must always span full width at the top.

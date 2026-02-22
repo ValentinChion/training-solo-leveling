@@ -19,13 +19,20 @@ export interface GraphEdge {
   to: string;
 }
 
+// New-node moves cost 1 AP. Revisit-move n costs ceil(n/3) AP.
+function revisitApCost(revisitCount: number): number {
+  return Math.ceil(revisitCount / 3);
+}
+
 interface GraphCanvasProps {
   nodes: GraphNode[];
   edges: GraphEdge[];
   center?: { x: number; y: number };
   spheres?: Partial<Record<SphereType, number>>;
   coins?: number;
+  ap?: number;
   onActivate?: (nodeId: string, sphereType: SphereType, cost: { spheres: number; coins: number }) => void;
+  onMove?: (apCost: number) => void;
 }
 
 const MIN_ZOOM = 0.25;
@@ -66,7 +73,9 @@ export function GraphCanvas({
   center = { x: 0, y: 0 },
   spheres,
   coins,
+  ap,
   onActivate,
+  onMove,
 }: GraphCanvasProps) {
   const outerRef = useRef<HTMLDivElement>(null);
   const transformRef = useRef({ x: 0, y: 0, scale: 1 });
@@ -89,6 +98,8 @@ export function GraphCanvas({
     () => new Set(nodes.filter(n => n.activated).map(n => n.id)),
   );
   const [hoveredActivationNode, setHoveredActivationNode] = useState<string | null>(null);
+  // Total revisit-moves made this session. Cost of the next revisit = ceil((revisitCount+1)/3).
+  const [revisitCount, setRevisitCount] = useState(0);
 
   const nodeMap = useMemo(
     () => Object.fromEntries(nodes.map(n => [n.id, n])),
@@ -111,11 +122,77 @@ export function GraphCanvas({
       .filter((n): n is GraphNode & { type: SphereType } => !!n?.type && !activatedNodes.has(n.id));
   }, [currentNode, reachableIds, nodeMap, activatedNodes]);
 
+  // BFS: returns shortest path [from, …, to], or null if unreachable.
+  function findPath(from: string, to: string): string[] | null {
+    if (from === to) return null;
+    const queue: string[][] = [[from]];
+    const seen = new Set<string>([from]);
+    while (queue.length > 0) {
+      const path = queue.shift()!;
+      const cur = path[path.length - 1];
+      for (const e of edges) {
+        const nb = e.from === cur ? e.to : e.to === cur ? e.from : null;
+        if (!nb || seen.has(nb)) continue;
+        const next = [...path, nb];
+        if (nb === to) return next;
+        seen.add(nb);
+        queue.push(next);
+      }
+    }
+    return null;
+  }
+
+  // Total AP cost to walk a path, simulating revisitCount accumulation step-by-step.
+  function pathApCost(path: string[]): number {
+    let total = 0;
+    let rc = revisitCount;
+    const future = new Set(visitedNodes);
+    for (let i = 1; i < path.length; i++) {
+      const id = path[i];
+      if (!future.has(id)) {
+        total += 1;
+        future.add(id);
+      } else {
+        rc++;
+        total += revisitApCost(rc);
+      }
+    }
+    return total;
+  }
+
+  function canAffordMove(nodeId: string): boolean {
+    const path = findPath(currentNode, nodeId);
+    if (!path) return false;
+    return (ap ?? Infinity) >= pathApCost(path);
+  }
+
   function move(nodeId: string): void {
-    if (!reachableIds.has(nodeId)) return;
-    setActivatedEdges(prev => new Set([...prev, edgeKey(currentNode, nodeId)]));
-    setCurrentNode(nodeId);
-    setVisitedNodes(prev => new Set([...prev, nodeId]));
+    const path = findPath(currentNode, nodeId);
+    if (!path) return;
+    const cost = pathApCost(path);
+    if ((ap ?? Infinity) < cost) return;
+
+    const newVisited = new Set(visitedNodes);
+    const newEdges = new Set(activatedEdges);
+    let rc = revisitCount;
+    let prev = path[0];
+
+    for (let i = 1; i < path.length; i++) {
+      const id = path[i];
+      newEdges.add(edgeKey(prev, id));
+      if (!newVisited.has(id)) {
+        newVisited.add(id);
+      } else {
+        rc++;
+      }
+      prev = id;
+    }
+
+    setCurrentNode(path[path.length - 1]);
+    setVisitedNodes(newVisited);
+    setActivatedEdges(newEdges);
+    setRevisitCount(rc);
+    if (cost > 0) onMove?.(cost);
   }
 
   function activate(node: GraphNode & { type: SphereType }): void {
@@ -262,6 +339,7 @@ export function GraphCanvas({
           const isVisited = visitedNodes.has(node.id);
           const isActivated = activatedNodes.has(node.id);
           const isTargeted = hoveredActivationNode === node.id;
+          const moveable = !isCurrent && canAffordMove(node.id);
           const opacity = isCurrent || isReachable || isVisited ? 1 : 0.35;
 
           return (
@@ -277,14 +355,13 @@ export function GraphCanvas({
               <motion.div
                 style={{
                   display: "inline-flex",
-                  opacity,
+                  opacity: isReachable && !moveable ? 0.4 : opacity,
                   transition: "opacity 0.3s ease",
-                  cursor: isReachable ? "pointer" : "default",
+                  cursor: moveable ? "pointer" : isReachable ? "not-allowed" : "default",
                 }}
                 animate={{ scale: isTargeted ? 1.22 : 1 }}
                 transition={{ duration: 0.2, ease: EASE }}
-                onPointerDown={isReachable ? e => e.stopPropagation() : undefined}
-                onClick={isReachable ? e => { e.stopPropagation(); move(node.id); } : undefined}
+                onPointerDown={moveable ? e => { e.stopPropagation(); move(node.id); } : undefined}
               >
                 {isCurrent && (
                   <motion.div
@@ -342,6 +419,69 @@ export function GraphCanvas({
             </div>
           );
         })}
+      </div>
+
+      {/* AP counter HUD — top right */}
+      <div
+        style={{
+          position: "absolute",
+          top: 12,
+          right: 14,
+          zIndex: 10,
+          display: "flex",
+          alignItems: "center",
+          gap: 8,
+          background: "linear-gradient(135deg, rgba(20,40,100,0.88) 0%, rgba(10,18,55,0.94) 100%)",
+          border: "1px solid rgba(100,170,255,0.2)",
+          borderRadius: 10,
+          backdropFilter: "blur(10px)",
+          padding: "7px 12px",
+          pointerEvents: "none",
+        }}
+      >
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
+          <polygon
+            points="7,1 13,5 13,9 7,13 1,9 1,5"
+            fill="rgba(91,140,255,0.18)"
+            stroke={ap === 0 ? "rgba(100,170,255,0.25)" : "rgba(91,140,255,0.9)"}
+            strokeWidth="1.2"
+          />
+          <polygon
+            points="7,3.5 11,6 11,8.5 7,11 3,8.5 3,6"
+            fill={ap === 0 ? "rgba(100,170,255,0.08)" : "rgba(91,140,255,0.45)"}
+          />
+        </svg>
+        <span style={{
+          fontSize: 13,
+          fontWeight: 700,
+          fontFamily: "monospace",
+          color: ap === 0 ? "rgba(232,234,246,0.3)" : "rgba(140,190,255,0.95)",
+          letterSpacing: "0.04em",
+          lineHeight: 1,
+        }}>
+          {ap ?? 0}
+        </span>
+        <span style={{
+          fontSize: 9,
+          fontWeight: 600,
+          letterSpacing: "0.12em",
+          textTransform: "uppercase",
+          color: "rgba(100,170,255,0.5)",
+          lineHeight: 1,
+        }}>
+          AP
+        </span>
+        {revisitCount > 0 && (
+          <span style={{
+            fontSize: 9,
+            fontFamily: "monospace",
+            color: "rgba(100,170,255,0.45)",
+            lineHeight: 1,
+            marginLeft: 2,
+          }}>
+            next ×{revisitApCost(revisitCount + 1)}
+          </span>
+        )}
       </div>
 
       <AnimatePresence>

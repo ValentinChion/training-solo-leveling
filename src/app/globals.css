@@ -194,7 +194,9 @@
   body {
     /* @apply bg-background text-foreground; */
     font-family: var(--font-body), system-ui, sans-serif;
-    height: 100vh
+    min-height: 100vh;
+    height: 100%;
+    min-width: 100%;
   }
 }
 

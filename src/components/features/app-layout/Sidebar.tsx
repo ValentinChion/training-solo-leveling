@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Dumbbell, Grid3x3, Scroll } from "lucide-react";
+import { Home, Dumbbell, Grid3x3, Scroll, PenLine } from "lucide-react";
 import { motion } from "motion/react";
 
 import {
@@ -10,6 +10,7 @@ import {
   SidebarContent,
   SidebarGroup,
   SidebarGroupContent,
+  SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
@@ -21,6 +22,10 @@ const NAV_ITEMS = [
   { href: "/workouts", label: "Workouts", icon: Dumbbell },
   { href: "/grid", label: "Dokkaebi's Bag", icon: Grid3x3 },
   { href: "/scenarios", label: "Scenarios", icon: Scroll },
+] as const;
+
+const ADMIN_ITEMS = [
+  { href: "/designer", label: "Grid Designer", icon: PenLine },
 ] as const;
 
 const ease = [0.23, 1, 0.32, 1] as const;
@@ -60,6 +65,34 @@ export function AppSidebar() {
                     initial={{ opacity: 0, x: -10 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.45, delay: 0.1 + i * 0.07, ease }}
+                  >
+                    <SidebarMenuButton asChild isActive={isActive(href)} size="lg">
+                      <Link href={href}>
+                        <Icon className="size-[1.05rem]" />
+                        <span>{label}</span>
+                      </Link>
+                    </SidebarMenuButton>
+                  </motion.div>
+                </SidebarMenuItem>
+              ))}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+
+        <SidebarGroup className="p-0 mt-4">
+          <SidebarGroupLabel className="px-2 text-[0.6rem] uppercase tracking-widest"
+            style={{ color: "rgba(100,170,255,0.35)" }}
+          >
+            Admin
+          </SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu className="gap-0.5">
+              {ADMIN_ITEMS.map(({ href, label, icon: Icon }, i) => (
+                <SidebarMenuItem key={href}>
+                  <motion.div
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.45, delay: 0.1 + (NAV_ITEMS.length + i) * 0.07, ease }}
                   >
                     <SidebarMenuButton asChild isActive={isActive(href)} size="lg">
                       <Link href={href}>

@@ -4,7 +4,7 @@ import { Exercise, Skill, Story } from "@/lib/orv/types";
 import { createContext, useContext, useReducer, type ReactNode } from "react";
 import { PlayerProfile, StatType } from "./types";
 import { SphereType } from "@/lib/orv/constants";
-import { addSpheres, calculateCoinsEarned, calculateSpheresEarned } from "../spheres/utils";
+import { addSpheres, calculateApEarned, calculateCoinsEarned, calculateSpheresEarned } from "../spheres/utils";
 import { generateId } from "./utils";
 import { applyMaintenance } from "../maintenance/utils";
 import { MOCK_PLAYER } from "./mock";
@@ -15,6 +15,7 @@ export type PlayerAction =
   | { type: "LOG_WORKOUT";           payload: { exercises: Exercise[]; scenarioId?: string; notes?: string } }
   | { type: "ACTIVATE_NODE";         payload: { statType: StatType; nodeIndex: number } }
   | { type: "SPEND_FOR_ACTIVATION";  payload: { sphereType: SphereType; spheres: number; coins: number } }
+  | { type: "SPEND_AP";              payload: { amount: number } }
   | { type: "COMPLETE_SCENARIO";     payload: { scenarioId: string } }
   | { type: "EARN_STORY";            payload: Story }
   | { type: "ADD_SKILL";             payload: Skill }
@@ -27,6 +28,7 @@ export function playerReducer(state: PlayerProfile, action: PlayerAction): Playe
       const { exercises, scenarioId, notes } = action.payload;
       const spheresEarned = calculateSpheresEarned(exercises);
       const coinsEarned = calculateCoinsEarned(exercises);
+      const apEarned = calculateApEarned(exercises);
       const now = new Date().toISOString();
 
       const trainedStats = new Set<StatType>(exercises.map((e) => e.statType));
@@ -40,6 +42,7 @@ export function playerReducer(state: PlayerProfile, action: PlayerAction): Playe
       return {
         ...state,
         coins: state.coins + coinsEarned,
+        ap: state.ap + apEarned,
         spheres: addSpheres(state.spheres, spheresEarned),
         workoutLog: [...state.workoutLog, { id: generateId(), date: now.split("T")[0], exercises, scenarioId, coinsEarned, spheresEarned, notes }],
         maintenanceState: { lastTrainedAt: newLastTrainedAt, coinDrainActive: newCoinDrainActive },
@@ -106,6 +109,12 @@ export function playerReducer(state: PlayerProfile, action: PlayerAction): Playe
         coins: state.coins - coinCost,
         spheres: { ...state.spheres, [sphereType]: state.spheres[sphereType] - sphereCost },
       };
+    }
+
+    case "SPEND_AP": {
+      const { amount } = action.payload;
+      if (state.ap < amount) return state;
+      return { ...state, ap: state.ap - amount };
     }
 
     case "APPLY_MAINTENANCE": {

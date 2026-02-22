@@ -5,6 +5,7 @@ import { SphereInventory, STAT_SPHERE } from "./types";
 
 const COINS_PER_SET = 5;
 const COINS_PER_EXERCISE = 3;
+const AP_PER_WORKOUT = 2;
 
 export function calculateSpheresEarned(exercises: Exercise[]): SphereInventory {
   const earned: SphereInventory = { power: 0, speed: 0, defense: 0, energy: 0 };
@@ -24,6 +25,10 @@ export function calculateCoinsEarned(exercises: Exercise[]): number {
     coins += exercise.sets.length * COINS_PER_SET;
   }
   return coins;
+}
+
+export function calculateApEarned(_exercises: Exercise[]): number {
+  return AP_PER_WORKOUT;
 }
 
 export function addSpheres(a: SphereInventory, b: SphereInventory): SphereInventory {

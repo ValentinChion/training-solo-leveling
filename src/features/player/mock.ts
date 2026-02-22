@@ -233,6 +233,7 @@ export const MOCK_PLAYER: PlayerProfile = {
   title: "Reader",
   stats: { str: 7, agi: 6, con: 8, sta: 5 },
   coins: 100,
+  ap: 6,
   spheres: { power: 3, speed: 2, defense: 1, energy: 0 },
   grids: {
     str: buildActivatedGrid("str", 7),

@@ -51,6 +51,7 @@ export interface PlayerProfile {
   title?: string;
   stats: StatBlock;
   coins: number;
+  ap: number;
   spheres: SphereInventory;
   grids: Record<StatType, StatGrid>;
   attributes: Attribute[];
