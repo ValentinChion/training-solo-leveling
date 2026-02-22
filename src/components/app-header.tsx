@@ -3,12 +3,12 @@
 import { Swords, Zap, Shield, Sparkles } from "lucide-react";
 import { motion } from "motion/react";
 
-import { SidebarTrigger } from "@/components/ui/sidebar";
-import { Separator } from "@/components/ui/separator";
-import { NumberTicker } from "@/components/ui/number-ticker";
-import { usePlayer } from "@/v1/lib/orv/hooks";
-import type { StatType } from "@/v1/lib/orv/constants";
-import type { PlayerProfile } from "@/v1/lib/orv/types";
+import { SidebarTrigger } from "@/components/ui/shadcn/sidebar";
+import { Separator } from "@/components/ui/shadcn/separator";
+import { NumberTicker } from "@/components/ui/magicui/number-ticker";
+import { usePlayer } from "@/lib/orv/hooks";
+import type { StatType } from "@/lib/orv/constants";
+import type { PlayerProfile } from "@/lib/orv/types";
 
 // ---------------------------------------------------------------------------
 // Config
@@ -112,7 +112,7 @@ export function AppHeader() {
       {/* Stats */}
       <div className="flex shrink-0 items-center gap-4">
         {STAT_KEYS.map((key, i) => {
-          const { label, icon: Icon, color } = STAT_CONFIG[key];
+          const { label, icon: Icon, color } = STAT_CONFIG[key as keyof typeof STAT_CONFIG];
           return (
             <motion.div
               key={key}

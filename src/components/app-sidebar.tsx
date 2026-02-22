@@ -14,7 +14,7 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@/components/ui/sidebar";
+} from "@/components/ui/shadcn/sidebar";
 
 const NAV_ITEMS = [
   { href: "/", label: "Dashboard", icon: Home },

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Cinzel, Rajdhani, Geist_Mono } from "next/font/google";
 
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
+import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
 import { AppHeader } from "@/components/app-header";
 import { Providers } from "@/components/providers";
