@@ -1,26 +1,364 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-mono);
+  --font-display: var(--font-display);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Custom ORV color tokens for Tailwind */
+  --color-stat-str: var(--stat-str);
+  --color-stat-agi: var(--stat-agi);
+  --color-stat-con: var(--stat-con);
+  --color-stat-mag: var(--stat-mag);
+  --color-sphere-power: var(--sphere-power);
+  --color-sphere-speed: var(--sphere-speed);
+  --color-sphere-mana: var(--sphere-mana);
+  --color-sphere-ability: var(--sphere-ability);
+  --color-sphere-key: var(--sphere-key);
+  --color-coin: var(--coin);
+  --color-grade-general: var(--grade-general);
+  --color-grade-rare: var(--grade-rare);
+  --color-grade-hero: var(--grade-hero);
+  --color-grade-legend: var(--grade-legend);
+  --color-grade-quasi-myth: var(--grade-quasi-myth);
+  --color-grade-myth: var(--grade-myth);
+  --animate-ripple: ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite;
+  --animate-shimmer-slide: shimmer-slide var(--speed) ease-in-out infinite alternate;
+  --animate-spin-around: spin-around calc(var(--speed) * 2) infinite linear;
+  @keyframes ripple {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    }
+  50% {
+    transform: translate(-50%, -50%) scale(0.9);
+    }
+  }
+  @keyframes shimmer-slide {
+  to {
+    transform: translate(calc(100cqw - 100%), 0);
+    }
+  }
+  @keyframes spin-around {
+  0% {
+    transform: translateZ(0) rotate(0);
+    }
+  15%, 35% {
+    transform: translateZ(0) rotate(90deg);
+    }
+  65%, 85% {
+    transform: translateZ(0) rotate(270deg);
+    }
+  100% {
+    transform: translateZ(0) rotate(360deg);
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ========================================
+   FFX Theme — Rich Luminous Blues
+   Always-dark — no light mode
+   Inspired by FFX menu panels, Macalania Woods,
+   and Zanarkand nights. Deep water, not void.
+   ======================================== */
+
+:root {
+  --radius: 0.625rem;
+
+  /* --- shadcn base variables (FFX blues) --- */
+  background: linear-gradient(150deg,
+      #9aa4c8 0%,
+      #8089b8 30%,
+      #7078b0 60%,
+      #636ea4 100%);
+  --foreground: #e8eaf6;
+  --card: #152550;
+  --card-foreground: #e8eaf6;
+  --popover: #152550;
+  --popover-foreground: #e8eaf6;
+  --primary: #5b8cff;
+  --primary-foreground: #ffffff;
+  --secondary: #7ca8ff;
+  --secondary-foreground: #ffffff;
+  --muted: #1a2d5c;
+  --muted-foreground: #8ba0cc;
+  --accent: #1a2d5c;
+  --accent-foreground: #e8eaf6;
+  --destructive: #ef4444;
+  --border: rgba(100, 170, 255, 0.2);
+  --input: #1a2d5c;
+  --ring: #5b8cff;
+
+  /* Charts */
+  --chart-1: #5b8cff;
+  --chart-2: #7ca8ff;
+  --chart-3: #ef4444;
+  --chart-4: #22c55e;
+  --chart-5: #f59e0b;
+
+  /* Sidebar */
+  --sidebar: #12214a;
+  --sidebar-foreground: #e8eaf6;
+  --sidebar-primary: #5b8cff;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #1a2d5c;
+  --sidebar-accent-foreground: #e8eaf6;
+  --sidebar-border: rgba(100, 170, 255, 0.2);
+  --sidebar-ring: #5b8cff;
+
+  /* --- Custom ORV properties --- */
+
+  /* Stat colors (FFX character-colored paths) */
+  --stat-str: #ef4444;
+  --stat-agi: #22c55e;
+  --stat-con: #f59e0b;
+  --stat-mag: #a855f7;
+
+  /* Sphere colors */
+  --sphere-power: #ef4444;
+  --sphere-speed: #22c55e;
+  --sphere-mana: #a855f7;
+  --sphere-ability: #3b82f6;
+  --sphere-key: #f59e0b;
+
+  /* Coin */
+  --coin: #fbbf24;
+
+  /* Grade/tier colors (Lost Ark-inspired) */
+  --grade-general: #9ca3af;
+  --grade-rare: #3b82f6;
+  --grade-hero: #22c55e;
+  --grade-legend: #f59e0b;
+  --grade-quasi-myth: #f97316;
+  --grade-myth: #ef4444;
+
+  /* Glow reference (blue, not violet) */
+  --primary-glow: rgba(91, 140, 255, 0.4);
+
+  /* Functional colors */
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --info: #5b8cff;
+
+  /* Panel reference */
+  --panel-border: rgba(100, 170, 255, 0.25);
+}
+
+/* Remove .dark override — we are always dark */
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    /* @apply bg-background text-foreground; */
+    font-family: var(--font-body), system-ui, sans-serif;
+    height: 100vh
+  }
+}
+
+/* ========================================
+   Mandala background overlay
+   White mandala, screen-blended onto the dark
+   blue base so it picks up the background color
+   rather than fighting it.
+   ======================================== */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: url('/97e78d6f104cb7df5f30a55b23bbee50.png');
+  background-size: 110vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.06;
+  mix-blend-mode: screen;
+}
+
+/* ========================================
+   Typography — RPG Character Fonts
+   Cinzel (display) + Rajdhani (body)
+   ======================================== */
+
+.font-display {
+  font-family: var(--font-display), serif;
+}
+
+/* .dark sidebar override removed — app is always dark, :root values are authoritative */
+
+/* ========================================
+   FFX Typography utilities
+   ======================================== */
+
+/* Layered blue glow — used for the logo and page titles */
+.ffx-title {
+  font-family: var(--font-display), serif;
+  color: #e8eaf6;
+  text-shadow:
+    0 0 8px rgba(91, 140, 255, 0.9),
+    0 0 20px rgba(91, 140, 255, 0.5),
+    0 0 40px rgba(91, 140, 255, 0.25);
+}
+
+/* Section headers — Cinzel uppercase with trailing gradient rule */
+.section-header {
+  font-family: var(--font-display), serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(232, 234, 246, 0.55);
+}
+
+/* ========================================
+   Sidebar — "Aetheric Dissolution"
+   No panel, no glass. Nav items float on
+   the gradient. Only spatial signal: a
+   luminous right-edge gradient pillar.
+   ======================================== */
+
+/* Kill the container's built-in border */
+[data-slot="sidebar-container"] {
+  border: none !important;
+}
+
+/* Inner panel — fully dissolved, no frame */
+[data-sidebar="sidebar"] {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  position: relative;
+}
+
+/* Right edge — luminous gradient pillar, fades top & bottom */
+[data-sidebar="sidebar"]::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 8%;
+  bottom: 8%;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(100, 170, 255, 0.18) 20%,
+    rgba(124, 168, 255, 0.5) 50%,
+    rgba(100, 170, 255, 0.18) 80%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+/* Nav item base — recessive, floating on gradient */
+[data-sidebar="menu-button"] {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: rgba(232, 234, 246, 0.42);
+  border-radius: 6px;
+  transition: color 0.2s ease, background 0.25s ease;
+  position: relative;
+  overflow: visible !important;
+}
+
+/* Hover — text lifts out of the background */
+[data-sidebar="menu-button"]:hover:not([data-active="true"]) {
+  background: rgba(91, 140, 255, 0.06) !important;
+  color: rgba(232, 234, 246, 0.82) !important;
+}
+
+[data-sidebar="menu-button"]:hover:not([data-active="true"]) svg {
+  color: rgba(200, 216, 255, 0.65);
+  transition: color 0.2s ease;
+}
+
+/* Active — radial corona emanating from the icon, no box */
+[data-sidebar="menu-button"][data-active="true"] {
+  background: radial-gradient(
+    ellipse 200px 56px at 28px center,
+    rgba(91, 140, 255, 0.22) 0%,
+    rgba(91, 140, 255, 0.09) 52%,
+    transparent 100%
+  ) !important;
+  color: #cddcff !important;
+  box-shadow: none !important;
+  font-weight: 600;
+}
+
+/* Left accent bar — 2px glowing pillar */
+[data-sidebar="menu-button"][data-active="true"]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 52%;
+  background: linear-gradient(to bottom, #a0c0ff, #5b8cff);
+  border-radius: 0 2px 2px 0;
+  box-shadow:
+    0 0 6px rgba(91, 140, 255, 1),
+    0 0 14px rgba(91, 140, 255, 0.6),
+    0 0 28px rgba(91, 140, 255, 0.3);
+}
+
+/* Active icon — sphere node igniting */
+[data-sidebar="menu-button"][data-active="true"] svg {
+  color: #7ca8ff;
+  filter:
+    drop-shadow(0 0 5px rgba(91, 140, 255, 0.9))
+    drop-shadow(0 0 12px rgba(91, 140, 255, 0.4));
+  transition: filter 0.2s ease, color 0.2s ease;
 }
