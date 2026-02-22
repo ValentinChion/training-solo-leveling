@@ -3,8 +3,8 @@ import { Cinzel, Rajdhani, Geist_Mono } from "next/font/google";
 
 import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
 import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
-import { AppSidebar } from "@/components/app-sidebar";
-import { AppHeader } from "@/components/app-header";
+import { AppSidebar } from "@/components/features/app-layout/Sidebar";
+import { AppHeader } from "@/components/features/app-layout/Header";
 import { Providers } from "@/components/providers";
 import "./globals.css";
 

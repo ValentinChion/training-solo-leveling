@@ -1,8 +1,8 @@
-// ORV Fitness Tracker — Sphere Grid Builder
+import { StatType } from "../player/types";
+import { STAT_SPHERE } from "../spheres/types";
+import { nodeActivationCost } from "@/lib/orv/constants";
+import { GridNode, StatGrid } from "./types";
 
-import { nodeActivationCost, STAT_SPHERE } from "./constants";
-import type { StatType } from "./constants";
-import type { StatGrid, GridNode } from "./types";
 
 const GRID_LENGTH = 50; // nodes per stat path
 const LOCK_INTERVAL = 10; // lock node every N levels
@@ -23,8 +23,9 @@ export function buildStatGrid(statType: StatType): StatGrid {
       level,
       activated: false,
       cost: {
-        sphereType: isLock ? "key" : sphereType,
-        sphereCount: isLock ? 1 : spheres,
+        sphereType,
+        // Lock nodes cost 2 spheres instead of 1 — milestone checkpoint
+        sphereCount: isLock ? 2 : spheres,
         coins,
       },
     });

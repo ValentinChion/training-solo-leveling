@@ -1,46 +1,25 @@
 "use client";
 
+import { Exercise, Skill, Story } from "@/lib/orv/types";
 import { createContext, useContext, useReducer, type ReactNode } from "react";
+import { PlayerProfile, StatType } from "./types";
+import { SphereType } from "@/lib/orv/constants";
+import { addSpheres, calculateCoinsEarned, calculateSpheresEarned } from "../spheres/utils";
+import { generateId } from "./utils";
+import { applyMaintenance } from "../maintenance/utils";
+import { MOCK_PLAYER } from "./mock";
 
-import type { StatType } from "./constants";
-import type { Exercise, PlayerProfile, Skill, Story, SphereInventory } from "./types";
-import { calculateSpheresEarned, calculateCoinsEarned } from "./sphere-calculator";
-import { applyMaintenance } from "./maintenance";
-import { MOCK_PLAYER } from "./mock-data";
 
-// ---------------------------------------------------------------------------
-// Actions
-// ---------------------------------------------------------------------------
 
 export type PlayerAction =
-  | { type: "LOG_WORKOUT";      payload: { exercises: Exercise[]; scenarioId?: string; notes?: string } }
-  | { type: "ACTIVATE_NODE";    payload: { statType: StatType; nodeIndex: number } }
-  | { type: "COMPLETE_SCENARIO";payload: { scenarioId: string } }
-  | { type: "EARN_STORY";       payload: Story }
-  | { type: "ADD_SKILL";        payload: Skill }
-  | { type: "APPLY_MAINTENANCE";payload: { now: Date } };
+  | { type: "LOG_WORKOUT";           payload: { exercises: Exercise[]; scenarioId?: string; notes?: string } }
+  | { type: "ACTIVATE_NODE";         payload: { statType: StatType; nodeIndex: number } }
+  | { type: "SPEND_FOR_ACTIVATION";  payload: { sphereType: SphereType; spheres: number; coins: number } }
+  | { type: "COMPLETE_SCENARIO";     payload: { scenarioId: string } }
+  | { type: "EARN_STORY";            payload: Story }
+  | { type: "ADD_SKILL";             payload: Skill }
+  | { type: "APPLY_MAINTENANCE";     payload: { now: Date } };
 
-// ---------------------------------------------------------------------------
-// Helpers
-// ---------------------------------------------------------------------------
-
-function addSpheres(a: SphereInventory, b: SphereInventory): SphereInventory {
-  return {
-    power:   a.power   + b.power,
-    speed:   a.speed   + b.speed,
-    mana:    a.mana    + b.mana,
-    ability: a.ability + b.ability,
-    key:     a.key     + b.key,
-  };
-}
-
-function generateId(): string {
-  return `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
-}
-
-// ---------------------------------------------------------------------------
-// Reducer
-// ---------------------------------------------------------------------------
 
 export function playerReducer(state: PlayerProfile, action: PlayerAction): PlayerProfile {
   switch (action.type) {
@@ -99,7 +78,6 @@ export function playerReducer(state: PlayerProfile, action: PlayerAction): Playe
       if (scenario.status === "completed") return state;
 
       const newSpheres = { ...state.spheres };
-      if (scenario.keySphereReward) newSpheres.key += scenario.keySphereReward;
 
       const newStories = scenario.storyReward
         ? [...state.stories, { id: generateId(), title: scenario.storyReward.title, grade: scenario.storyReward.grade, earnedAt: new Date().toISOString(), description: `Earned by completing "${scenario.title}".` }]
@@ -120,6 +98,16 @@ export function playerReducer(state: PlayerProfile, action: PlayerAction): Playe
     case "ADD_SKILL":
       return { ...state, skills: [...state.skills, action.payload] };
 
+    case "SPEND_FOR_ACTIVATION": {
+      const { sphereType, spheres: sphereCost, coins: coinCost } = action.payload;
+      if (state.spheres[sphereType] < sphereCost || state.coins < coinCost) return state;
+      return {
+        ...state,
+        coins: state.coins - coinCost,
+        spheres: { ...state.spheres, [sphereType]: state.spheres[sphereType] - sphereCost },
+      };
+    }
+
     case "APPLY_MAINTENANCE": {
       const result = applyMaintenance(state.stats, state.coins, state.maintenanceState, action.payload.now);
       return { ...state, ...result };
@@ -130,9 +118,6 @@ export function playerReducer(state: PlayerProfile, action: PlayerAction): Playe
   }
 }
 
-// ---------------------------------------------------------------------------
-// Context
-// ---------------------------------------------------------------------------
 
 interface PlayerContextValue {
   player: PlayerProfile;
@@ -143,6 +128,7 @@ const PlayerContext = createContext<PlayerContextValue | null>(null);
 
 export function PlayerProvider({ children }: { children: ReactNode }) {
   const [player, dispatch] = useReducer(playerReducer, MOCK_PLAYER);
+  
   return <PlayerContext value={{ player, dispatch }}>{children}</PlayerContext>;
 }
 

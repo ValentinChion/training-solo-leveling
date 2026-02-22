@@ -1,27 +1,26 @@
 "use client";
 
-import { Swords, Zap, Shield, Sparkles } from "lucide-react";
+import { BicepsFlexed, Wind, ShieldHalf, Zap } from "lucide-react";
 import { motion } from "motion/react";
 
 import { SidebarTrigger } from "@/components/ui/shadcn/sidebar";
 import { Separator } from "@/components/ui/shadcn/separator";
 import { NumberTicker } from "@/components/ui/magicui/number-ticker";
-import { usePlayer } from "@/lib/orv/hooks";
-import type { StatType } from "@/lib/orv/constants";
-import type { PlayerProfile } from "@/lib/orv/types";
+import { PlayerProfile, StatType } from "@/features/player/types";
+import { usePlayer } from "@/features/player/context";
 
 // ---------------------------------------------------------------------------
 // Config
 // ---------------------------------------------------------------------------
 
 const STAT_CONFIG = {
-  str: { label: "STR", icon: Swords,    color: "#ef4444" },
-  agi: { label: "AGI", icon: Zap,       color: "#22c55e" },
-  con: { label: "CON", icon: Shield,    color: "#f59e0b" },
-  mag: { label: "MAG", icon: Sparkles,  color: "#a855f7" },
+  str: { label: "STR", icon: BicepsFlexed, color: "#ef4444" },
+  agi: { label: "AGI", icon: Wind,       color: "#22c55e" },
+  con: { label: "CON", icon: ShieldHalf, color: "#3b82f6" },
+  sta: { label: "STA", icon: Zap,        color: "#f97316" },
 } satisfies Record<StatType, { label: string; icon: React.ComponentType<{ className?: string; style?: React.CSSProperties }>; color: string }>;
 
-const STAT_KEYS: StatType[] = ["str", "agi", "con", "mag"];
+const STAT_KEYS: StatType[] = ["str", "agi", "con", "sta"];
 
 const XP_PER_LEVEL = 10;
 const ease = [0.23, 1, 0.32, 1] as const;

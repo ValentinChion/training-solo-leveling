@@ -1,5 +1,7 @@
 // ORV Fitness Tracker — Domain Constants
 
+import { StatType } from "@/features/player/types";
+
 // ---------------------------------------------------------------------------
 // Grades
 // ---------------------------------------------------------------------------
@@ -34,28 +36,10 @@ export const GRADE_META: Record<Grade, { label: string; color: string }> = {
 };
 
 // ---------------------------------------------------------------------------
-// Stat Types
-// ---------------------------------------------------------------------------
-
-export const STAT_TYPES = ["str", "agi", "con", "mag"] as const;
-
-export type StatType = (typeof STAT_TYPES)[number];
-
-export const STAT_META: Record<
-  StatType,
-  { label: string; description: string; color: string; iconName: string }
-> = {
-  str: { label: "Strength",      description: "Weights & resistance training", color: "#ef4444", iconName: "Swords"   },
-  agi: { label: "Agility",       description: "Running & HIIT",                color: "#22c55e", iconName: "Zap"      },
-  con: { label: "Constitution",  description: "Endurance activities",           color: "#f59e0b", iconName: "Shield"   },
-  mag: { label: "Magic Power",   description: "Yoga & recovery",               color: "#a855f7", iconName: "Sparkles" },
-};
-
-// ---------------------------------------------------------------------------
 // Sphere Types
 // ---------------------------------------------------------------------------
 
-export const SPHERE_TYPES = ["power", "speed", "mana", "ability", "key"] as const;
+export const SPHERE_TYPES = ["power", "speed", "defense", "energy"] as const;
 
 export type SphereType = (typeof SPHERE_TYPES)[number];
 
@@ -63,19 +47,18 @@ export const SPHERE_META: Record<
   SphereType,
   { label: string; description: string; color: string; iconName: string; activatesStats: StatType[] }
 > = {
-  power:   { label: "Power Sphere",   description: "Activates STR and CON stat nodes",         color: "#ef4444", iconName: "Circle", activatesStats: ["str", "con"] },
-  speed:   { label: "Speed Sphere",   description: "Activates AGI stat nodes",                  color: "#22c55e", iconName: "Circle", activatesStats: ["agi"]        },
-  mana:    { label: "Mana Sphere",    description: "Activates MAG stat nodes",                  color: "#a855f7", iconName: "Circle", activatesStats: ["mag"]        },
-  ability: { label: "Ability Sphere", description: "Activates skill and exercise unlock nodes", color: "#3b82f6", iconName: "Circle", activatesStats: ["str", "agi", "con", "mag"] },
-  key:     { label: "Key Sphere",     description: "Unlocks milestone lock nodes",              color: "#f59e0b", iconName: "Key",    activatesStats: []             },
+  power:   { label: "Power Sphere",   description: "Activates STR stat nodes",   color: "#ef4444", iconName: "BicepsFlexed", activatesStats: ["str"] },
+  speed:   { label: "Speed Sphere",   description: "Activates AGI stat nodes",   color: "#22c55e", iconName: "Wind",        activatesStats: ["agi"] },
+  defense: { label: "Defense Sphere", description: "Activates CON stat nodes",   color: "#3b82f6", iconName: "ShieldHalf",  activatesStats: ["con"] },
+  energy:  { label: "Energy Sphere",  description: "Activates STA stat nodes",   color: "#f97316", iconName: "Zap",         activatesStats: ["sta"] },
 };
 
 /** Which sphere type is used to activate nodes for each stat. */
 export const STAT_SPHERE: Record<StatType, SphereType> = {
   str: "power",
   agi: "speed",
-  con: "power",
-  mag: "mana",
+  con: "defense",
+  sta: "energy",
 };
 
 // ---------------------------------------------------------------------------
@@ -106,12 +89,3 @@ export function nodeActivationCost(level: number): { spheres: number; coins: num
     coins: 10 * Math.pow(2, Math.floor(level / 10)),
   };
 }
-
-// ---------------------------------------------------------------------------
-// Maintenance / Decay Constants
-// ---------------------------------------------------------------------------
-
-export const MAINTENANCE_GRACE_DAYS = 3;
-export const MAINTENANCE_COIN_COST_PER_DAY = 3;
-export const DECAY_RATE_DAYS = 7;
-export const STAT_FLOOR = 1;

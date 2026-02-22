@@ -1,13 +1,12 @@
-// ORV Fitness Tracker — Maintenance & Decay
-
+import { StatBlock } from "@/lib/orv/types";
+import { STAT_TYPES } from "../player/types";
+import type { MaintenanceState } from "./types";
 import {
-  MAINTENANCE_GRACE_DAYS,
-  MAINTENANCE_COIN_COST_PER_DAY,
-  DECAY_RATE_DAYS,
   STAT_FLOOR,
-  STAT_TYPES,
-} from "./constants";
-import type { StatBlock, MaintenanceState } from "./types";
+  DECAY_RATE_DAYS,
+  MAINTENANCE_COIN_COST_PER_DAY,
+  MAINTENANCE_GRACE_DAYS,
+} from "./types";
 
 interface MaintenanceResult {
   stats: StatBlock;
@@ -28,7 +27,8 @@ export function applyMaintenance(
 
   for (const stat of STAT_TYPES) {
     const lastTrained = new Date(maintenanceState.lastTrainedAt[stat]);
-    const daysSince = (now.getTime() - lastTrained.getTime()) / (1000 * 60 * 60 * 24);
+    const daysSince =
+      (now.getTime() - lastTrained.getTime()) / (1000 * 60 * 60 * 24);
 
     if (daysSince <= MAINTENANCE_GRACE_DAYS) {
       // Within grace — reset drain if it was active

@@ -51,12 +51,11 @@
   --color-stat-str: var(--stat-str);
   --color-stat-agi: var(--stat-agi);
   --color-stat-con: var(--stat-con);
-  --color-stat-mag: var(--stat-mag);
+  --color-stat-sta: var(--stat-sta);
   --color-sphere-power: var(--sphere-power);
   --color-sphere-speed: var(--sphere-speed);
-  --color-sphere-mana: var(--sphere-mana);
-  --color-sphere-ability: var(--sphere-ability);
-  --color-sphere-key: var(--sphere-key);
+  --color-sphere-defense: var(--sphere-defense);
+  --color-sphere-energy: var(--sphere-energy);
   --color-coin: var(--coin);
   --color-grade-general: var(--grade-general);
   --color-grade-rare: var(--grade-rare);
@@ -149,18 +148,17 @@
 
   /* --- Custom ORV properties --- */
 
-  /* Stat colors (FFX character-colored paths) */
+  /* Stat colors */
   --stat-str: #ef4444;
   --stat-agi: #22c55e;
-  --stat-con: #f59e0b;
-  --stat-mag: #a855f7;
+  --stat-con: #3b82f6;
+  --stat-sta: #f97316;
 
   /* Sphere colors */
   --sphere-power: #ef4444;
   --sphere-speed: #22c55e;
-  --sphere-mana: #a855f7;
-  --sphere-ability: #3b82f6;
-  --sphere-key: #f59e0b;
+  --sphere-defense: #3b82f6;
+  --sphere-energy: #f97316;
 
   /* Coin */
   --coin: #fbbf24;
@@ -231,6 +229,14 @@ body::before {
 }
 
 /* .dark sidebar override removed — app is always dark, :root values are authoritative */
+
+/* ========================================
+   Sphere grid — node pulse animation
+   ======================================== */
+@keyframes node-pulse {
+  0%, 100% { box-shadow: 0 0 10px var(--node-color, #5b8cff), 0 0 20px rgba(91,140,255,0.25); opacity: 1; }
+  50%       { box-shadow: 0 0 18px var(--node-color, #5b8cff), 0 0 32px rgba(91,140,255,0.45); opacity: 0.75; }
+}
 
 /* ========================================
    FFX Typography utilities
