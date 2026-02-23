@@ -1,0 +1,2954 @@
+[     407ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/97e78d6f104cb7df5f30a55b23bbee50.png:0
+[   31920ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/components/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/components/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/components/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[   39838ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/components/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/components/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/components/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[   42193ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/components/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/components/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/components/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[   48679ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/components/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/components/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/components/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[   61670ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/components/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/components/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/components/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[   72370ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/components/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/components/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/components/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[   77969ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/components/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/components/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/components/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[   86272ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/components/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/components/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/components/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[   86273ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/components/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/components/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/components/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/components/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[   86273ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/components/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/components/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/components/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[   89377ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/components/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/components/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/components/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/components/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[   89377ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/components/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/components/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/components/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/components/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[   89378ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/components/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/components/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/components/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  100851ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/components/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/components/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/components/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  103437ms] [WARNING] [HMR] Invalid message: {"isTrusted":true}
+TypeError: Cannot convert undefined or null to object
+    at Object.keys (<anonymous>)
+    at extractModulesFromTurbopackMessage (http://localhost:3000/_next/static/chunks/5e669_next_dist_client_4e6543fa._.js:11210:39)
+    at TurbopackHmr.onTurbopackMessage (http://localhost:3000/_next/static/chunks/5e669_next_dist_client_4e6543fa._.js:11157:32)
+    at processMessage (http://localhost:3000/_next/static/chunks/5e669_next_dist_client_4e6543fa._.js:11589:30)
+    at WebSocket.handleMessage (http://localhost:3000/_next/static/chunks/5e669_next_dist_client_4e6543fa._.js:10914:52) @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:2297
+[  141631ms] [ERROR] ./src/app/grid/page.tsx:8:1
+Module not found: Can't resolve '@/components/grid/graph-canvas'
+   6 | import { SphereIcon } from "@/components/orv/sphere-icon";
+   7 | import { SPHERE_TYPES, type SphereType } from "@/lib/orv/constants";
+>  8 | import { GraphCanvas, type GraphNode, type GraphEdge } from "@/components/grid/graph-canvas";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { usePlayer } from "@/features/player/context";
+  10 | import { useGridDesign } from "@/features/grid-design/context";
+  11 |
+
+Import map: aliased to relative './src/components/grid/graph-canvas' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/grid/page.tsx [Client Component Browser]
+    ./src/app/grid/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/grid/page.tsx [Client Component SSR]
+    ./src/app/grid/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  165998ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  165998ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  171716ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  171716ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  175470ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  175470ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  175470ms] [ERROR] ./src/app/grid/page.tsx:8:1
+Module not found: Can't resolve '@/features/grid-design/graph-canvas'
+   6 | import { SphereIcon } from "@/components/orv/sphere-icon";
+   7 | import { SPHERE_TYPES, type SphereType } from "@/lib/orv/constants";
+>  8 | import { GraphCanvas, type GraphNode, type GraphEdge } from "@/features/grid-design/graph-canvas";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { usePlayer } from "@/features/player/context";
+  10 | import { useGridDesign } from "@/features/grid-design/context";
+  11 |
+
+Import map: aliased to relative './src/features/grid-design/graph-canvas' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/grid/page.tsx [Client Component Browser]
+    ./src/app/grid/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/grid/page.tsx [Client Component SSR]
+    ./src/app/grid/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  177099ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  177099ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  181848ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  181848ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  181848ms] [ERROR] ./src/app/grid/page.tsx:8:1
+Module not found: Can't resolve '@/features/grid-design/components/graph-canvas'
+   6 | import { SphereIcon } from "@/components/orv/sphere-icon";
+   7 | import { SPHERE_TYPES, type SphereType } from "@/lib/orv/constants";
+>  8 | import { GraphCanvas, type GraphNode, type GraphEdge } from "@/features/grid-design/components/graph-canvas";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { usePlayer } from "@/features/player/context";
+  10 | import { useGridDesign } from "@/features/grid-design/context";
+  11 |
+
+Import map: aliased to relative './src/features/grid-design/components/graph-canvas' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/grid/page.tsx [Client Component Browser]
+    ./src/app/grid/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/grid/page.tsx [Client Component SSR]
+    ./src/app/grid/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  183697ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  183697ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  187089ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  187089ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  193749ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  193749ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  196080ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  196080ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  196080ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/features/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/features/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/features/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  206851ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  206851ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  206851ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/features/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/features/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/features/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  225199ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  225200ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  225200ms] [ERROR] ./src/app/grid/page.tsx:8:1
+Module not found: Can't resolve '@/features/grid-design/components/GraphCanvas'
+   6 | import { SphereIcon } from "@/components/orv/sphere-icon";
+   7 | import { SPHERE_TYPES, type SphereType } from "@/lib/orv/constants";
+>  8 | import { GraphCanvas, type GraphNode, type GraphEdge } from "@/features/grid-design/components/GraphCanvas";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 | import { usePlayer } from "@/features/player/context";
+  10 | import { useGridDesign } from "@/features/grid-design/context";
+  11 |
+
+Import map: aliased to relative './src/features/grid-design/components/GraphCanvas' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/grid/page.tsx [Client Component Browser]
+    ./src/app/grid/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/grid/page.tsx [Client Component SSR]
+    ./src/app/grid/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  225200ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/features/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/features/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/features/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  227193ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  227193ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  227193ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/features/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/features/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/features/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  233529ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  233529ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  233529ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/features/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/features/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/features/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  239446ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  239446ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  239446ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/features/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/features/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/features/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  248095ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  248096ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  248096ms] [ERROR] ./src/app/designer/page.tsx:22:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  20 |   HUB_Y,
+  21 | } from "@/features/designer/types";
+> 22 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import {
+  24 |   buildNodes,
+  25 |   structCenter,
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  248096ms] [ERROR] ./src/components/providers.tsx:4:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  2 |
+  3 | import { PlayerProvider } from "@/features/player/context";
+> 4 | import { GridDesignProvider } from "@/features/grid-design/context";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }: { children: React.ReactNode }) {
+  7 |   return (
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/providers.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  248096ms] [ERROR] ./src/app/grid/page.tsx:10:1
+Module not found: Can't resolve '@/features/grid-design/context'
+   8 | import { GraphCanvas, type GraphNode, type GraphEdge } from "@/features/sphere-grid/components/GraphCanvas";
+   9 | import { usePlayer } from "@/features/player/context";
+> 10 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Four linear arms radiating from the hub — each node has at most 2 connections.
+  13 | // The hub (C) is the only node with degree > 2 (one edge per arm).
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/grid/page.tsx [Client Component Browser]
+    ./src/app/grid/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/grid/page.tsx [Client Component SSR]
+    ./src/app/grid/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  248096ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/features/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/features/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/features/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  262726ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  262726ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  262727ms] [ERROR] ./src/app/designer/page.tsx:22:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  20 |   HUB_Y,
+  21 | } from "@/features/designer/types";
+> 22 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import {
+  24 |   buildNodes,
+  25 |   structCenter,
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  262727ms] [ERROR] ./src/components/providers.tsx:4:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  2 |
+  3 | import { PlayerProvider } from "@/features/player/context";
+> 4 | import { GridDesignProvider } from "@/features/grid-design/context";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }: { children: React.ReactNode }) {
+  7 |   return (
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/providers.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  262727ms] [ERROR] ./src/app/grid/page.tsx:10:1
+Module not found: Can't resolve '@/features/grid-design/context'
+   8 | import { GraphCanvas, type GraphNode, type GraphEdge } from "@/features/sphere-grid/components/GraphCanvas";
+   9 | import { usePlayer } from "@/features/player/context";
+> 10 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Four linear arms radiating from the hub — each node has at most 2 connections.
+  13 | // The hub (C) is the only node with degree > 2 (one edge per arm).
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/grid/page.tsx [Client Component Browser]
+    ./src/app/grid/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/grid/page.tsx [Client Component SSR]
+    ./src/app/grid/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  262727ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/features/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/features/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/features/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  272922ms] [ERROR] ./src/features/designer/utils.ts:1:1
+Module not found: Can't resolve './types'
+>  1 | import {
+     | ^^^^^^^^
+>  2 |   RADII,
+     | ^^^^^^^^
+>  3 |   SPACING_ORTHO,
+     | ^^^^^^^^
+>  4 |   SPACING_DIAG,
+     | ^^^^^^^^
+>  5 |   HUB_X,
+     | ^^^^^^^^
+>  6 |   HUB_Y,
+     | ^^^^^^^^
+>  7 |   SVG_W,
+     | ^^^^^^^^
+>  8 |   SVG_H,
+     | ^^^^^^^^
+>  9 |   MAX_STRUCTURES,
+     | ^^^^^^^^
+> 10 | } from "./types";
+     | ^^^^^^^^^^^^^^^^^^
+  11 | import type { GNode, GStructure, GStructureKind, NodeId } from "./types";
+  12 |
+  13 | export function nodeXY(
+
+Import traces:
+  Client Component Browser:
+    ./src/features/designer/utils.ts [Client Component Browser]
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/designer/utils.ts [Client Component SSR]
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  272922ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  272922ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  272922ms] [ERROR] ./src/app/designer/page.tsx:13:1
+Module not found: Can't resolve '@/features/designer/types'
+  11 |   ActiveEdge,
+  12 | } from "@/features/designer/types";
+> 13 | import {
+     | ^^^^^^^^
+> 14 |   RADII,
+     | ^^^^^^^^
+> 15 |   NODE_R,
+     | ^^^^^^^^
+> 16 |   SPHERE_TYPES,
+     | ^^^^^^^^
+> 17 |   COLORS,
+     | ^^^^^^^^
+> 18 |   MAX_STRUCTURES,
+     | ^^^^^^^^
+> 19 |   HUB_X,
+     | ^^^^^^^^
+> 20 |   HUB_Y,
+     | ^^^^^^^^
+> 21 | } from "@/features/designer/types";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  22 | import { useGridDesign } from "@/features/grid-design/context";
+  23 | import {
+  24 |   buildNodes,
+
+Import map: aliased to relative './src/features/designer/types' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  272923ms] [ERROR] ./src/app/designer/page.tsx:22:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  20 |   HUB_Y,
+  21 | } from "@/features/designer/types";
+> 22 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import {
+  24 |   buildNodes,
+  25 |   structCenter,
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  272923ms] [ERROR] ./src/components/providers.tsx:4:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  2 |
+  3 | import { PlayerProvider } from "@/features/player/context";
+> 4 | import { GridDesignProvider } from "@/features/grid-design/context";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }: { children: React.ReactNode }) {
+  7 |   return (
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/providers.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  272923ms] [ERROR] ./src/app/grid/page.tsx:10:1
+Module not found: Can't resolve '@/features/grid-design/context'
+   8 | import { GraphCanvas, type GraphNode, type GraphEdge } from "@/features/sphere-grid/components/GraphCanvas";
+   9 | import { usePlayer } from "@/features/player/context";
+> 10 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Four linear arms radiating from the hub — each node has at most 2 connections.
+  13 | // The hub (C) is the only node with degree > 2 (one edge per arm).
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/grid/page.tsx [Client Component Browser]
+    ./src/app/grid/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/grid/page.tsx [Client Component SSR]
+    ./src/app/grid/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  272923ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/features/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/features/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/features/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  275441ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  275441ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  275441ms] [ERROR] ./src/app/designer/page.tsx:22:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  20 |   HUB_Y,
+  21 | } from "@/features/admin/design-grid-sphere/types";
+> 22 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import {
+  24 |   buildNodes,
+  25 |   structCenter,
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  275441ms] [ERROR] ./src/components/providers.tsx:4:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  2 |
+  3 | import { PlayerProvider } from "@/features/player/context";
+> 4 | import { GridDesignProvider } from "@/features/grid-design/context";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }: { children: React.ReactNode }) {
+  7 |   return (
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/providers.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  275441ms] [ERROR] ./src/app/grid/page.tsx:10:1
+Module not found: Can't resolve '@/features/grid-design/context'
+   8 | import { GraphCanvas, type GraphNode, type GraphEdge } from "@/features/sphere-grid/components/GraphCanvas";
+   9 | import { usePlayer } from "@/features/player/context";
+> 10 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Four linear arms radiating from the hub — each node has at most 2 connections.
+  13 | // The hub (C) is the only node with degree > 2 (one edge per arm).
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/grid/page.tsx [Client Component Browser]
+    ./src/app/grid/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/grid/page.tsx [Client Component SSR]
+    ./src/app/grid/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  275441ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/features/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/features/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/features/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  278287ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  278287ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  278287ms] [ERROR] ./src/app/designer/page.tsx:23:1
+Module not found: Can't resolve '@/features/designer/utils'
+  21 | } from "@/features/admin/design-grid-sphere/types";
+  22 | import { useGridDesign } from "@/features/grid-design/context";
+> 23 | import {
+     | ^^^^^^^^
+> 24 |   buildNodes,
+     | ^^^^^^^^^^^^^
+> 25 |   structCenter,
+     | ^^^^^^^^^^^^^
+> 26 |   svgSize,
+     | ^^^^^^^^^^^^^
+> 27 |   intraCandidates,
+     | ^^^^^^^^^^^^^
+> 28 |   outerRing,
+     | ^^^^^^^^^^^^^
+> 29 |   ekey,
+     | ^^^^^^^^^^^^^
+> 30 |   structOf,
+     | ^^^^^^^^^^^^^
+> 31 | } from "@/features/designer/utils";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  32 |
+  33 | // ── Module-level style helpers ───────────────────────────────────────────────
+  34 |
+
+Import map: aliased to relative './src/features/designer/utils' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  278287ms] [ERROR] ./src/app/designer/page.tsx:22:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  20 |   HUB_Y,
+  21 | } from "@/features/admin/design-grid-sphere/types";
+> 22 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import {
+  24 |   buildNodes,
+  25 |   structCenter,
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  278287ms] [ERROR] ./src/components/providers.tsx:4:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  2 |
+  3 | import { PlayerProvider } from "@/features/player/context";
+> 4 | import { GridDesignProvider } from "@/features/grid-design/context";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }: { children: React.ReactNode }) {
+  7 |   return (
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/providers.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  278287ms] [ERROR] ./src/app/grid/page.tsx:10:1
+Module not found: Can't resolve '@/features/grid-design/context'
+   8 | import { GraphCanvas, type GraphNode, type GraphEdge } from "@/features/sphere-grid/components/GraphCanvas";
+   9 | import { usePlayer } from "@/features/player/context";
+> 10 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Four linear arms radiating from the hub — each node has at most 2 connections.
+  13 | // The hub (C) is the only node with degree > 2 (one edge per arm).
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/grid/page.tsx [Client Component Browser]
+    ./src/app/grid/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/grid/page.tsx [Client Component SSR]
+    ./src/app/grid/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  278288ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/features/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/features/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/features/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  289459ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  289460ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  289460ms] [ERROR] ./src/app/designer/page.tsx:23:1
+Module not found: Can't resolve '@/features/designer/utils'
+  21 | } from "@/features/admin/design-grid-sphere/types";
+  22 | import { useGridDesign } from "@/features/grid-design/context";
+> 23 | import {
+     | ^^^^^^^^
+> 24 |   buildNodes,
+     | ^^^^^^^^^^^^^
+> 25 |   structCenter,
+     | ^^^^^^^^^^^^^
+> 26 |   svgSize,
+     | ^^^^^^^^^^^^^
+> 27 |   intraCandidates,
+     | ^^^^^^^^^^^^^
+> 28 |   outerRing,
+     | ^^^^^^^^^^^^^
+> 29 |   ekey,
+     | ^^^^^^^^^^^^^
+> 30 |   structOf,
+     | ^^^^^^^^^^^^^
+> 31 | } from "@/features/designer/utils";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  32 |
+  33 | // ── Module-level style helpers ───────────────────────────────────────────────
+  34 |
+
+Import map: aliased to relative './src/features/designer/utils' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  289460ms] [ERROR] ./src/app/designer/page.tsx:22:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  20 |   HUB_Y,
+  21 | } from "@/features/admin/design-grid-sphere/types";
+> 22 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import {
+  24 |   buildNodes,
+  25 |   structCenter,
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  289460ms] [ERROR] ./src/components/providers.tsx:4:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  2 |
+  3 | import { PlayerProvider } from "@/features/player/context";
+> 4 | import { GridDesignProvider } from "@/features/grid-design/context";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }: { children: React.ReactNode }) {
+  7 |   return (
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/providers.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  289460ms] [ERROR] ./src/app/grid/page.tsx:10:1
+Module not found: Can't resolve '@/features/grid-design/context'
+   8 | import { GraphCanvas, type GraphNode, type GraphEdge } from "@/features/sphere-grid/components/GraphCanvas";
+   9 | import { usePlayer } from "@/features/player/context";
+> 10 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Four linear arms radiating from the hub — each node has at most 2 connections.
+  13 | // The hub (C) is the only node with degree > 2 (one edge per arm).
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/grid/page.tsx [Client Component Browser]
+    ./src/app/grid/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/grid/page.tsx [Client Component SSR]
+    ./src/app/grid/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  289460ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/features/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/features/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/features/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  297411ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  297412ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  297412ms] [ERROR] ./src/app/designer/page.tsx:23:1
+Module not found: Can't resolve '@/features/designer/utils'
+  21 | } from "@/features/admin/design-grid-sphere/types";
+  22 | import { useGridDesign } from "@/features/grid-design/context";
+> 23 | import {
+     | ^^^^^^^^
+> 24 |   buildNodes,
+     | ^^^^^^^^^^^^^
+> 25 |   structCenter,
+     | ^^^^^^^^^^^^^
+> 26 |   svgSize,
+     | ^^^^^^^^^^^^^
+> 27 |   intraCandidates,
+     | ^^^^^^^^^^^^^
+> 28 |   outerRing,
+     | ^^^^^^^^^^^^^
+> 29 |   ekey,
+     | ^^^^^^^^^^^^^
+> 30 |   structOf,
+     | ^^^^^^^^^^^^^
+> 31 | } from "@/features/designer/utils";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  32 |
+  33 | // ── Module-level style helpers ───────────────────────────────────────────────
+  34 |
+
+Import map: aliased to relative './src/features/designer/utils' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  297412ms] [ERROR] ./src/app/designer/page.tsx:22:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  20 |   HUB_Y,
+  21 | } from "@/features/admin/design-grid-sphere/types";
+> 22 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import {
+  24 |   buildNodes,
+  25 |   structCenter,
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  297412ms] [ERROR] ./src/components/providers.tsx:4:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  2 |
+  3 | import { PlayerProvider } from "@/features/player/context";
+> 4 | import { GridDesignProvider } from "@/features/grid-design/context";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }: { children: React.ReactNode }) {
+  7 |   return (
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/providers.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  297412ms] [ERROR] ./src/app/grid/page.tsx:10:1
+Module not found: Can't resolve '@/features/grid-design/context'
+   8 | import { GraphCanvas, type GraphNode, type GraphEdge } from "@/features/sphere-grid/components/GraphCanvas";
+   9 | import { usePlayer } from "@/features/player/context";
+> 10 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Four linear arms radiating from the hub — each node has at most 2 connections.
+  13 | // The hub (C) is the only node with degree > 2 (one edge per arm).
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/grid/page.tsx [Client Component Browser]
+    ./src/app/grid/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/grid/page.tsx [Client Component SSR]
+    ./src/app/grid/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  297412ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/features/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/features/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/features/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  301919ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  301919ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  301919ms] [ERROR] ./src/app/designer/page.tsx:23:1
+Module not found: Can't resolve '@/features/designer/utils'
+  21 | } from "@/features/admin/design-grid-sphere/types";
+  22 | import { useGridDesign } from "@/features/grid-design/context";
+> 23 | import {
+     | ^^^^^^^^
+> 24 |   buildNodes,
+     | ^^^^^^^^^^^^^
+> 25 |   structCenter,
+     | ^^^^^^^^^^^^^
+> 26 |   svgSize,
+     | ^^^^^^^^^^^^^
+> 27 |   intraCandidates,
+     | ^^^^^^^^^^^^^
+> 28 |   outerRing,
+     | ^^^^^^^^^^^^^
+> 29 |   ekey,
+     | ^^^^^^^^^^^^^
+> 30 |   structOf,
+     | ^^^^^^^^^^^^^
+> 31 | } from "@/features/designer/utils";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  32 |
+  33 | // ── Module-level style helpers ───────────────────────────────────────────────
+  34 |
+
+Import map: aliased to relative './src/features/designer/utils' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  301920ms] [ERROR] ./src/app/designer/page.tsx:22:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  20 |   HUB_Y,
+  21 | } from "@/features/admin/design-grid-sphere/types";
+> 22 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import {
+  24 |   buildNodes,
+  25 |   structCenter,
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  301920ms] [ERROR] ./src/components/providers.tsx:4:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  2 |
+  3 | import { PlayerProvider } from "@/features/player/context";
+> 4 | import { GridDesignProvider } from "@/features/grid-design/context";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }: { children: React.ReactNode }) {
+  7 |   return (
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/providers.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  301920ms] [ERROR] ./src/app/grid/page.tsx:10:1
+Module not found: Can't resolve '@/features/grid-design/context'
+   8 | import { GraphCanvas, type GraphNode, type GraphEdge } from "@/features/sphere-grid/components/GraphCanvas";
+   9 | import { usePlayer } from "@/features/player/context";
+> 10 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Four linear arms radiating from the hub — each node has at most 2 connections.
+  13 | // The hub (C) is the only node with degree > 2 (one edge per arm).
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/grid/page.tsx [Client Component Browser]
+    ./src/app/grid/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/grid/page.tsx [Client Component SSR]
+    ./src/app/grid/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  301920ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/features/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/features/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/features/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  314716ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  314716ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  314717ms] [ERROR] ./src/app/designer/page.tsx:23:1
+Module not found: Can't resolve '@/features/designer/utils'
+  21 | } from "@/features/admin/design-grid-sphere/types";
+  22 | import { useGridDesign } from "@/features/grid-design/context";
+> 23 | import {
+     | ^^^^^^^^
+> 24 |   buildNodes,
+     | ^^^^^^^^^^^^^
+> 25 |   structCenter,
+     | ^^^^^^^^^^^^^
+> 26 |   svgSize,
+     | ^^^^^^^^^^^^^
+> 27 |   intraCandidates,
+     | ^^^^^^^^^^^^^
+> 28 |   outerRing,
+     | ^^^^^^^^^^^^^
+> 29 |   ekey,
+     | ^^^^^^^^^^^^^
+> 30 |   structOf,
+     | ^^^^^^^^^^^^^
+> 31 | } from "@/features/designer/utils";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  32 |
+  33 | // ── Module-level style helpers ───────────────────────────────────────────────
+  34 |
+
+Import map: aliased to relative './src/features/designer/utils' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  314717ms] [ERROR] ./src/app/designer/page.tsx:22:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  20 |   HUB_Y,
+  21 | } from "@/features/admin/design-grid-sphere/types";
+> 22 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import {
+  24 |   buildNodes,
+  25 |   structCenter,
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  314717ms] [ERROR] ./src/components/providers.tsx:4:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  2 |
+  3 | import { PlayerProvider } from "@/features/player/context";
+> 4 | import { GridDesignProvider } from "@/features/grid-design/context";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }: { children: React.ReactNode }) {
+  7 |   return (
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/providers.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  314717ms] [ERROR] ./src/app/grid/page.tsx:10:1
+Module not found: Can't resolve '@/features/grid-design/context'
+   8 | import { GraphCanvas, type GraphNode, type GraphEdge } from "@/features/sphere-grid/components/GraphCanvas";
+   9 | import { usePlayer } from "@/features/player/context";
+> 10 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Four linear arms radiating from the hub — each node has at most 2 connections.
+  13 | // The hub (C) is the only node with degree > 2 (one edge per arm).
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/grid/page.tsx [Client Component Browser]
+    ./src/app/grid/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/grid/page.tsx [Client Component SSR]
+    ./src/app/grid/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  314717ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/features/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/features/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/features/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  316342ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  316342ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  316342ms] [ERROR] ./src/app/designer/page.tsx:23:1
+Module not found: Can't resolve '@/features/designer/utils'
+  21 | } from "@/features/admin/design-grid-sphere/types";
+  22 | import { useGridDesign } from "@/features/grid-design/context";
+> 23 | import {
+     | ^^^^^^^^
+> 24 |   buildNodes,
+     | ^^^^^^^^^^^^^
+> 25 |   structCenter,
+     | ^^^^^^^^^^^^^
+> 26 |   svgSize,
+     | ^^^^^^^^^^^^^
+> 27 |   intraCandidates,
+     | ^^^^^^^^^^^^^
+> 28 |   outerRing,
+     | ^^^^^^^^^^^^^
+> 29 |   ekey,
+     | ^^^^^^^^^^^^^
+> 30 |   structOf,
+     | ^^^^^^^^^^^^^
+> 31 | } from "@/features/designer/utils";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  32 |
+  33 | // ── Module-level style helpers ───────────────────────────────────────────────
+  34 |
+
+Import map: aliased to relative './src/features/designer/utils' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  316342ms] [ERROR] ./src/app/designer/page.tsx:22:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  20 |   HUB_Y,
+  21 | } from "@/features/admin/design-grid-sphere/types";
+> 22 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import {
+  24 |   buildNodes,
+  25 |   structCenter,
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  316342ms] [ERROR] ./src/components/providers.tsx:4:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  2 |
+  3 | import { PlayerProvider } from "@/features/player/context";
+> 4 | import { GridDesignProvider } from "@/features/grid-design/context";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }: { children: React.ReactNode }) {
+  7 |   return (
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/providers.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  316342ms] [ERROR] ./src/app/grid/page.tsx:10:1
+Module not found: Can't resolve '@/features/grid-design/context'
+   8 | import { GraphCanvas, type GraphNode, type GraphEdge } from "@/features/sphere-grid/components/GraphCanvas";
+   9 | import { usePlayer } from "@/features/player/context";
+> 10 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Four linear arms radiating from the hub — each node has at most 2 connections.
+  13 | // The hub (C) is the only node with degree > 2 (one edge per arm).
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/grid/page.tsx [Client Component Browser]
+    ./src/app/grid/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/grid/page.tsx [Client Component SSR]
+    ./src/app/grid/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  316342ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/features/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/features/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/features/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  324831ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=6vZtJH9b8lNMRJk3GDN1X' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/5e669_next_dist_client_4e6543fa._.js:10878
+[  325834ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=6vZtJH9b8lNMRJk3GDN1X' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/5e669_next_dist_client_4e6543fa._.js:10878
+[  326837ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=6vZtJH9b8lNMRJk3GDN1X' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/5e669_next_dist_client_4e6543fa._.js:10878
+[  329806ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/designer:0
+[  329964ms] Error: ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/app/layout.tsx:7:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at Object.getCompilationErrors (file:///Users/valentinchion/src/training-solo-leveling/node_modules/.pnpm/next@16.1.6_@babel+core@7.29.0_babel-plugin-react-compiler@1.0.0_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/dist/server/dev/hot-reloader-turbopack.js:1008:59)
+    at DevBundlerService.getCompilationError (file:///Users/valentinchion/src/training-solo-leveling/node_modules/.pnpm/next@16.1.6_@babel+core@7.29.0_babel-plugin-react-compiler@1.0.0_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/dist/server/lib/dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file:///Users/valentinchion/src/training-solo-leveling/node_modules/.pnpm/next@16.1.6_@babel+core@7.29.0_babel-plugin-react-compiler@1.0.0_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/dist/server/dev/next-dev-server.js:706:42)
+    at DevServer.findPageComponents (file:///Users/valentinchion/src/training-solo-leveling/node_modules/.pnpm/next@16.1.6_@babel+core@7.29.0_babel-plugin-react-compiler@1.0.0_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/dist/server/dev/next-dev-server.js:676:43)
+    at async DevServer.renderErrorToResponseImpl (file:///Users/valentinchion/src/training-solo-leveling/node_modules/.pnpm/next@16.1.6_@babel+core@7.29.0_babel-plugin-react-compiler@1.0.0_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/dist/server/base-server.js:1733:26)
+[  329993ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  329994ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  329994ms] [ERROR] ./src/app/designer/page.tsx:23:1
+Module not found: Can't resolve '@/features/designer/utils'
+  21 | } from "@/features/admin/design-grid-sphere/types";
+  22 | import { useGridDesign } from "@/features/grid-design/context";
+> 23 | import {
+     | ^^^^^^^^
+> 24 |   buildNodes,
+     | ^^^^^^^^^^^^^
+> 25 |   structCenter,
+     | ^^^^^^^^^^^^^
+> 26 |   svgSize,
+     | ^^^^^^^^^^^^^
+> 27 |   intraCandidates,
+     | ^^^^^^^^^^^^^
+> 28 |   outerRing,
+     | ^^^^^^^^^^^^^
+> 29 |   ekey,
+     | ^^^^^^^^^^^^^
+> 30 |   structOf,
+     | ^^^^^^^^^^^^^
+> 31 | } from "@/features/designer/utils";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  32 |
+  33 | // ── Module-level style helpers ───────────────────────────────────────────────
+  34 |
+
+Import map: aliased to relative './src/features/designer/utils' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  329994ms] [ERROR] ./src/app/designer/page.tsx:22:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  20 |   HUB_Y,
+  21 | } from "@/features/admin/design-grid-sphere/types";
+> 22 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import {
+  24 |   buildNodes,
+  25 |   structCenter,
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  329994ms] [ERROR] ./src/components/providers.tsx:4:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  2 |
+  3 | import { PlayerProvider } from "@/features/player/context";
+> 4 | import { GridDesignProvider } from "@/features/grid-design/context";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }: { children: React.ReactNode }) {
+  7 |   return (
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/providers.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  329994ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  329994ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  329994ms] [ERROR] ./src/components/providers.tsx:4:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  2 |
+  3 | import { PlayerProvider } from "@/features/player/context";
+> 4 | import { GridDesignProvider } from "@/features/grid-design/context";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }: { children: React.ReactNode }) {
+  7 |   return (
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/providers.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  329994ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/features/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/features/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/features/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  330027ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  330027ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  330027ms] [ERROR] ./src/app/designer/page.tsx:23:1
+Module not found: Can't resolve '@/features/designer/utils'
+  21 | } from "@/features/admin/design-grid-sphere/types";
+  22 | import { useGridDesign } from "@/features/grid-design/context";
+> 23 | import {
+     | ^^^^^^^^
+> 24 |   buildNodes,
+     | ^^^^^^^^^^^^^
+> 25 |   structCenter,
+     | ^^^^^^^^^^^^^
+> 26 |   svgSize,
+     | ^^^^^^^^^^^^^
+> 27 |   intraCandidates,
+     | ^^^^^^^^^^^^^
+> 28 |   outerRing,
+     | ^^^^^^^^^^^^^
+> 29 |   ekey,
+     | ^^^^^^^^^^^^^
+> 30 |   structOf,
+     | ^^^^^^^^^^^^^
+> 31 | } from "@/features/designer/utils";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  32 |
+  33 | // ── Module-level style helpers ───────────────────────────────────────────────
+  34 |
+
+Import map: aliased to relative './src/features/designer/utils' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  330027ms] [ERROR] ./src/app/designer/page.tsx:22:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  20 |   HUB_Y,
+  21 | } from "@/features/admin/design-grid-sphere/types";
+> 22 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import {
+  24 |   buildNodes,
+  25 |   structCenter,
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  330027ms] [ERROR] ./src/components/providers.tsx:4:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  2 |
+  3 | import { PlayerProvider } from "@/features/player/context";
+> 4 | import { GridDesignProvider } from "@/features/grid-design/context";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }: { children: React.ReactNode }) {
+  7 |   return (
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/providers.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  330027ms] [ERROR] ./src/app/workouts/page.tsx:5:1
+Module not found: Can't resolve '@/features/workouts/WorkoutCard'
+  3 | import { motion } from "motion/react";
+  4 | import { usePlayer } from "@/features/player/context";
+> 5 | import { WorkoutCard } from "@/features/workouts/WorkoutCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const EASE = [0.23, 1, 0.32, 1] as const;
+  8 |
+
+Import map: aliased to relative './src/features/workouts/WorkoutCard' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/workouts/page.tsx [Client Component Browser]
+    ./src/app/workouts/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/workouts/page.tsx [Client Component SSR]
+    ./src/app/workouts/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  345452ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  345453ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  345453ms] [ERROR] ./src/app/designer/page.tsx:23:1
+Module not found: Can't resolve '@/features/designer/utils'
+  21 | } from "@/features/admin/design-grid-sphere/types";
+  22 | import { useGridDesign } from "@/features/grid-design/context";
+> 23 | import {
+     | ^^^^^^^^
+> 24 |   buildNodes,
+     | ^^^^^^^^^^^^^
+> 25 |   structCenter,
+     | ^^^^^^^^^^^^^
+> 26 |   svgSize,
+     | ^^^^^^^^^^^^^
+> 27 |   intraCandidates,
+     | ^^^^^^^^^^^^^
+> 28 |   outerRing,
+     | ^^^^^^^^^^^^^
+> 29 |   ekey,
+     | ^^^^^^^^^^^^^
+> 30 |   structOf,
+     | ^^^^^^^^^^^^^
+> 31 | } from "@/features/designer/utils";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  32 |
+  33 | // ── Module-level style helpers ───────────────────────────────────────────────
+  34 |
+
+Import map: aliased to relative './src/features/designer/utils' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  345453ms] [ERROR] ./src/app/designer/page.tsx:22:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  20 |   HUB_Y,
+  21 | } from "@/features/admin/design-grid-sphere/types";
+> 22 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import {
+  24 |   buildNodes,
+  25 |   structCenter,
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  345453ms] [ERROR] ./src/components/providers.tsx:4:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  2 |
+  3 | import { PlayerProvider } from "@/features/player/context";
+> 4 | import { GridDesignProvider } from "@/features/grid-design/context";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }: { children: React.ReactNode }) {
+  7 |   return (
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/providers.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  356271ms] [ERROR] ./src/app/layout.tsx:7:1
+Module not found: Can't resolve '@/features/app-layout/Header'
+   5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+   6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+>  7 | import { AppHeader } from "@/features/app-layout/Header";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Providers } from "@/components/providers";
+   9 | import "./globals.css";
+  10 |
+
+Import map: aliased to relative './src/features/app-layout/Header' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  356271ms] [ERROR] ./src/app/layout.tsx:6:1
+Module not found: Can't resolve '@/features/app-layout/Sidebar'
+  4 | import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
+  5 | import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
+> 6 | import { AppSidebar } from "@/features/app-layout/Sidebar";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import { AppHeader } from "@/features/app-layout/Header";
+  8 | import { Providers } from "@/components/providers";
+  9 | import "./globals.css";
+
+Import map: aliased to relative './src/features/app-layout/Sidebar' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  356271ms] [ERROR] ./src/app/designer/page.tsx:23:1
+Module not found: Can't resolve '@/features/designer/utils'
+  21 | } from "@/features/admin/design-grid-sphere/types";
+  22 | import { useGridDesign } from "@/features/grid-design/context";
+> 23 | import {
+     | ^^^^^^^^
+> 24 |   buildNodes,
+     | ^^^^^^^^^^^^^
+> 25 |   structCenter,
+     | ^^^^^^^^^^^^^
+> 26 |   svgSize,
+     | ^^^^^^^^^^^^^
+> 27 |   intraCandidates,
+     | ^^^^^^^^^^^^^
+> 28 |   outerRing,
+     | ^^^^^^^^^^^^^
+> 29 |   ekey,
+     | ^^^^^^^^^^^^^
+> 30 |   structOf,
+     | ^^^^^^^^^^^^^
+> 31 | } from "@/features/designer/utils";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  32 |
+  33 | // ── Module-level style helpers ───────────────────────────────────────────────
+  34 |
+
+Import map: aliased to relative './src/features/designer/utils' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  356271ms] [ERROR] ./src/app/designer/page.tsx:22:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  20 |   HUB_Y,
+  21 | } from "@/features/admin/design-grid-sphere/types";
+> 22 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import {
+  24 |   buildNodes,
+  25 |   structCenter,
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  356271ms] [ERROR] ./src/components/providers.tsx:4:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  2 |
+  3 | import { PlayerProvider } from "@/features/player/context";
+> 4 | import { GridDesignProvider } from "@/features/grid-design/context";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function Providers({ children }: { children: React.ReactNode }) {
+  7 |   return (
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/providers.tsx
+    ./src/app/layout.tsx
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  369968ms] [ERROR] ./src/app/designer/page.tsx:23:1
+Module not found: Can't resolve '@/features/designer/utils'
+  21 | } from "@/features/admin/design-grid-sphere/types";
+  22 | import { useGridDesign } from "@/features/grid-design/context";
+> 23 | import {
+     | ^^^^^^^^
+> 24 |   buildNodes,
+     | ^^^^^^^^^^^^^
+> 25 |   structCenter,
+     | ^^^^^^^^^^^^^
+> 26 |   svgSize,
+     | ^^^^^^^^^^^^^
+> 27 |   intraCandidates,
+     | ^^^^^^^^^^^^^
+> 28 |   outerRing,
+     | ^^^^^^^^^^^^^
+> 29 |   ekey,
+     | ^^^^^^^^^^^^^
+> 30 |   structOf,
+     | ^^^^^^^^^^^^^
+> 31 | } from "@/features/designer/utils";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  32 |
+  33 | // ── Module-level style helpers ───────────────────────────────────────────────
+  34 |
+
+Import map: aliased to relative './src/features/designer/utils' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  369968ms] [ERROR] ./src/app/designer/page.tsx:22:1
+Module not found: Can't resolve '@/features/grid-design/context'
+  20 |   HUB_Y,
+  21 | } from "@/features/admin/design-grid-sphere/types";
+> 22 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 | import {
+  24 |   buildNodes,
+  25 |   structCenter,
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  412126ms] [ERROR] ./src/features/admin/design-grid-sphere/utils.ts:1:1
+Module not found: Can't resolve '../admin/design-grid-sphere/types'
+>  1 | import {
+     | ^^^^^^^^
+>  2 |   RADII,
+     | ^^^^^^^^
+>  3 |   SPACING_ORTHO,
+     | ^^^^^^^^
+>  4 |   SPACING_DIAG,
+     | ^^^^^^^^
+>  5 |   HUB_X,
+     | ^^^^^^^^
+>  6 |   HUB_Y,
+     | ^^^^^^^^
+>  7 |   SVG_W,
+     | ^^^^^^^^
+>  8 |   SVG_H,
+     | ^^^^^^^^
+>  9 |   MAX_STRUCTURES,
+     | ^^^^^^^^
+> 10 | } from "../admin/design-grid-sphere/types";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import type { GNode, GStructure, GStructureKind, NodeId } from "../admin/design-grid-sphere/types";
+  12 |
+  13 | export function nodeXY(
+
+Import traces:
+  Client Component Browser:
+    ./src/features/admin/design-grid-sphere/utils.ts [Client Component Browser]
+    ./src/app/designer/page.tsx [Client Component Browser]
+    ./src/app/designer/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/features/admin/design-grid-sphere/utils.ts [Client Component SSR]
+    ./src/app/designer/page.tsx [Client Component SSR]
+    ./src/app/designer/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_be1dccb0._.js:1920
+[  445651ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/97e78d6f104cb7df5f30a55b23bbee50.png:0
+[  450837ms] [ERROR] ./src/app/grid/page.tsx:10:1
+Module not found: Can't resolve '@/features/grid-design/context'
+   8 | import { GraphCanvas, type GraphNode, type GraphEdge } from "@/features/sphere-grid/components/GraphCanvas";
+   9 | import { usePlayer } from "@/features/player/context";
+> 10 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Four linear arms radiating from the hub — each node has at most 2 connections.
+  13 | // The hub (C) is the only node with degree > 2 (one edge per arm).
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/grid/page.tsx [Client Component Browser]
+    ./src/app/grid/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/grid/page.tsx [Client Component SSR]
+    ./src/app/grid/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  450983ms] [ERROR] ./src/app/grid/page.tsx:10:1
+Module not found: Can't resolve '@/features/grid-design/context'
+   8 | import { GraphCanvas, type GraphNode, type GraphEdge } from "@/features/sphere-grid/components/GraphCanvas";
+   9 | import { usePlayer } from "@/features/player/context";
+> 10 | import { useGridDesign } from "@/features/grid-design/context";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | // Four linear arms radiating from the hub — each node has at most 2 connections.
+  13 | // The hub (C) is the only node with degree > 2 (one edge per arm).
+
+Import map: aliased to relative './src/features/grid-design/context' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/grid/page.tsx [Client Component Browser]
+    ./src/app/grid/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/grid/page.tsx [Client Component SSR]
+    ./src/app/grid/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found @ http://localhost:3000/_next/static/chunks/5e669_next_dist_96ff6868._.js:3127
+[  472554ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=-ErrxlK_NJam9eyuv5KZH' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/5e669_next_dist_client_4e6543fa._.js:10878
+[  473557ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=-ErrxlK_NJam9eyuv5KZH' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/5e669_next_dist_client_4e6543fa._.js:10878
+[  474560ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=-ErrxlK_NJam9eyuv5KZH' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/5e669_next_dist_client_4e6543fa._.js:10878
+[  475563ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=-ErrxlK_NJam9eyuv5KZH' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/5e669_next_dist_client_4e6543fa._.js:10878
+[  476566ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=-ErrxlK_NJam9eyuv5KZH' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/5e669_next_dist_client_4e6543fa._.js:10878
+[  481569ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=-ErrxlK_NJam9eyuv5KZH' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/5e669_next_dist_client_4e6543fa._.js:10878
+[  486572ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=-ErrxlK_NJam9eyuv5KZH' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/5e669_next_dist_client_4e6543fa._.js:10878
+[  491576ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=-ErrxlK_NJam9eyuv5KZH' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/5e669_next_dist_client_4e6543fa._.js:10878
+[  496578ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=-ErrxlK_NJam9eyuv5KZH' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/5e669_next_dist_client_4e6543fa._.js:10878
+[  501582ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=-ErrxlK_NJam9eyuv5KZH' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/5e669_next_dist_client_4e6543fa._.js:10878
+[  506584ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=-ErrxlK_NJam9eyuv5KZH' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/5e669_next_dist_client_4e6543fa._.js:10878
+[  511587ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=-ErrxlK_NJam9eyuv5KZH' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/5e669_next_dist_client_4e6543fa._.js:10878

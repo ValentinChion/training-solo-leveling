@@ -49,7 +49,7 @@ export function AppHeader() {
   const xpPct = (xpIntoLevel / xpPerLevel) * 100;
 
   return (
-    <header className="sticky top-0 z-50 flex h-14 items-center gap-3 border-b border-white/[0.07] px-4">
+    <header data-slot="app-header" className="sticky top-0 z-50 flex h-14 items-center gap-3 border-b px-4">
       {/* Sidebar toggle */}
       <SidebarTrigger className="shrink-0 text-foreground/40 hover:text-foreground/80 transition-colors" />
 

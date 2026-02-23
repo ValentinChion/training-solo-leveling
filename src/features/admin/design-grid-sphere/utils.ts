@@ -8,7 +8,7 @@ import {
   SVG_H,
   MAX_STRUCTURES,
 } from "./types";
-import type { GNode, GStructure, NodeId } from "./types";
+import type { GNode, GStructure, GStructureKind, NodeId } from "./types";
 
 export function nodeXY(
   ring: number,
@@ -24,6 +24,12 @@ export function nodeXY(
   };
 }
 
+export function outerRing(kind: GStructureKind): number {
+  if (kind === "large") return 3;
+  if (kind === "small") return 1;
+  return 0; // single
+}
+
 export function buildNodes(s: GStructure): GNode[] {
   const center: GNode = {
     id: `${s.id}_C`,
@@ -35,6 +41,24 @@ export function buildNodes(s: GStructure): GNode[] {
     ...nodeXY(0, 0, s.cx, s.cy),
   };
 
+  if (s.kind === "single") return [center];
+
+  if (s.kind === "small") {
+    const ring1 = [0, 2, 4, 6].map(
+      (p): GNode => ({
+        id: `${s.id}_R1P${p}`,
+        structId: s.id,
+        baseId: `R1P${p}`,
+        ring: 1,
+        pos: p,
+        type: null,
+        ...nodeXY(1, p, s.cx, s.cy),
+      }),
+    );
+    return [center, ...ring1];
+  }
+
+  // large
   const ringNodes = [1, 2, 3].flatMap((r) =>
     Array.from(
       { length: 8 },
@@ -75,11 +99,26 @@ export function svgSize(_count: number): { W: number; H: number } {
   return { W: SVG_W, H: SVG_H };
 }
 
-export function intraCandidates(
-  structId: string,
-): Array<[NodeId, NodeId]> {
-  const n = (base: string): NodeId => `${structId}_${base}`;
+export function intraCandidates(s: GStructure): Array<[NodeId, NodeId]> {
+  const n = (base: string): NodeId => `${s.id}_${base}`;
 
+  if (s.kind === "single") return [];
+
+  if (s.kind === "small") {
+    const positions = [0, 2, 4, 6];
+    const centerToRing1: Array<[NodeId, NodeId]> = positions.map(
+      (p): [NodeId, NodeId] => [n("C"), n(`R1P${p}`)],
+    );
+    const circumferential: Array<[NodeId, NodeId]> = positions.map(
+      (p, i): [NodeId, NodeId] => [
+        n(`R1P${p}`),
+        n(`R1P${positions[(i + 1) % 4]}`),
+      ],
+    );
+    return [...centerToRing1, ...circumferential];
+  }
+
+  // large
   const centerToRing1 = Array.from(
     { length: 8 },
     (_, p): [NodeId, NodeId] => [n("C"), n(`R1P${p}`)],

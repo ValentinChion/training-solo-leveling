@@ -2,13 +2,14 @@
 
 import { useState, useEffect, useRef } from "react";
 import { HyperText } from "@/components/ui/magicui/hyper-text";
-import type { GraphNode, GraphEdge } from "@/components/grid/graph-canvas";
+import type { GraphNode, GraphEdge } from "@/features/sphere-grid/components/GraphCanvas";
 import type {
   NodeId,
   GNode,
   GStructure,
+  GStructureKind,
   ActiveEdge,
-} from "@/features/designer/types";
+} from "@/features/admin/design-grid-sphere/types";
 import {
   RADII,
   NODE_R,
@@ -17,30 +18,31 @@ import {
   MAX_STRUCTURES,
   HUB_X,
   HUB_Y,
-} from "@/features/designer/types";
-import { useGridDesign } from "@/features/grid-design/context";
+} from "@/features/admin/design-grid-sphere/types";
+import { useGridDesign } from "@/features/admin/design-grid-sphere/context";
 import {
   buildNodes,
   structCenter,
   svgSize,
   intraCandidates,
+  outerRing,
   ekey,
   structOf,
-} from "@/features/designer/utils";
+} from "@/features/admin/design-grid-sphere/utils";
 
 // ── Module-level style helpers ───────────────────────────────────────────────
 
-const PANEL_BORDER = "1px solid rgba(100,170,255,0.12)";
-const PANEL_BG = "rgba(10,18,55,0.6)";
-const MUTED_COLOR = "rgba(100,170,255,0.35)";
-const LABEL_COLOR = "rgba(140,190,255,0.85)";
-const TEXT_COLOR = "rgba(232,234,246,0.5)";
+const PANEL_BORDER = "1px solid rgba(255,255,255,0.15)";
+const PANEL_BG = "rgba(255,255,255,0.09)";
+const MUTED_COLOR = "rgba(255,255,255,0.38)";
+const LABEL_COLOR = "rgba(255,255,255,0.85)";
+const TEXT_COLOR = "rgba(255,255,255,0.55)";
 
 function modeButtonStyle(active: boolean, accent: string): React.CSSProperties {
   return {
-    background: active ? `${accent}20` : "rgba(100,170,255,0.05)",
-    border: `1px solid ${active ? `${accent}80` : "rgba(100,170,255,0.12)"}`,
-    color: active ? accent : MUTED_COLOR,
+    background: active ? `${accent}30` : "rgba(255,255,255,0.12)",
+    border: `1px solid ${active ? accent : "rgba(255,255,255,0.22)"}`,
+    color: active ? "#fff" : "rgba(255,255,255,0.88)",
     cursor: "pointer",
   };
 }
@@ -53,10 +55,10 @@ const MENU_STYLE: React.CSSProperties = {
   gap: 5,
   padding: "6px 8px",
   borderRadius: 10,
-  background: "linear-gradient(160deg, rgba(18,32,80,0.97) 0%, rgba(8,14,42,0.99) 100%)",
-  border: "1px solid rgba(100,170,255,0.22)",
-  boxShadow: "0 4px 24px rgba(0,0,0,0.6)",
-  backdropFilter: "blur(12px)",
+  background: "rgba(255,255,255,0.18)",
+  border: "1px solid rgba(255,255,255,0.28)",
+  boxShadow: "0 4px 24px rgba(0,0,0,0.15)",
+  backdropFilter: "blur(20px)",
 };
 
 const MENU_ARROW_STYLE: React.CSSProperties = {
@@ -66,8 +68,8 @@ const MENU_ARROW_STYLE: React.CSSProperties = {
   transform: "translateX(-50%)",
   width: 8,
   height: 8,
-  background: "rgba(18,32,80,0.97)",
-  border: "1px solid rgba(100,170,255,0.22)",
+  background: "rgba(255,255,255,0.18)",
+  border: "1px solid rgba(255,255,255,0.28)",
   borderTop: "none",
   borderLeft: "none",
   rotate: "45deg",
@@ -91,16 +93,16 @@ const REMOVE_BUTTON_STYLE: React.CSSProperties = {
 };
 
 const RESET_BUTTON_STYLE: React.CSSProperties = {
-  background: "rgba(100,170,255,0.05)",
-  border: "1px solid rgba(100,170,255,0.14)",
-  color: "rgba(100,170,255,0.45)",
+  background: "rgba(255,255,255,0.12)",
+  border: "1px solid rgba(255,255,255,0.22)",
+  color: "rgba(255,255,255,0.88)",
   cursor: "pointer",
 };
 
 const OUTPUT_PRE_STYLE: React.CSSProperties = {
-  background: "rgba(8,12,30,0.9)",
-  border: "1px solid rgba(100,170,255,0.1)",
-  color: "rgba(140,190,255,0.7)",
+  background: "rgba(0,0,0,0.25)",
+  border: "1px solid rgba(255,255,255,0.10)",
+  color: "rgba(255,255,255,0.65)",
   maxHeight: 280,
   whiteSpace: "pre-wrap",
   wordBreak: "break-all",
@@ -151,18 +153,18 @@ function clearButtonStyle(isNull: boolean): React.CSSProperties {
 
 function feedbackButtonStyle(active: boolean): React.CSSProperties {
   return {
-    background: active ? "rgba(34,197,94,0.15)" : "rgba(91,140,255,0.15)",
-    border: `1px solid ${active ? "rgba(34,197,94,0.4)" : "rgba(91,140,255,0.3)"}`,
-    color: active ? "#22c55e" : "rgba(140,190,255,0.9)",
+    background: active ? "rgba(34,197,94,0.22)" : "rgba(255,255,255,0.12)",
+    border: `1px solid ${active ? "rgba(34,197,94,0.7)" : "rgba(255,255,255,0.22)"}`,
+    color: active ? "#4ade80" : "rgba(255,255,255,0.88)",
     cursor: "pointer",
   };
 }
 
 function saveButtonStyle(saved: boolean): React.CSSProperties {
   return {
-    background: saved ? "rgba(34,197,94,0.15)" : "rgba(91,140,255,0.12)",
-    border: `1px solid ${saved ? "rgba(34,197,94,0.4)" : "rgba(91,140,255,0.35)"}`,
-    color: saved ? "#22c55e" : "rgba(140,190,255,0.95)",
+    background: saved ? "rgba(34,197,94,0.22)" : "rgba(255,255,255,0.18)",
+    border: `1px solid ${saved ? "rgba(34,197,94,0.7)" : "rgba(255,255,255,0.30)"}`,
+    color: saved ? "#4ade80" : "#fff",
     cursor: "pointer",
   };
 }
@@ -171,7 +173,7 @@ function saveButtonStyle(saved: boolean): React.CSSProperties {
 
 const SLOT_LABELS = ["Hub", "N", "NE", "E", "SE", "S", "SW", "W", "NW"] as const;
 
-const INIT_STRUCT: GStructure = { id: "S1", slot: 0, ...structCenter(0) };
+const INIT_STRUCT: GStructure = { id: "S1", slot: 0, kind: "large", ...structCenter(0) };
 
 // ── Component ────────────────────────────────────────────────────────────────
 
@@ -182,6 +184,7 @@ export default function DesignerPage(): React.JSX.Element {
   const [structures, setStructures] = useState<GStructure[]>(() => snap?.structures ?? [INIT_STRUCT]);
   const [nodes, setNodes] = useState<GNode[]>(() => snap?.nodes ?? buildNodes(INIT_STRUCT));
   const [edges, setEdges] = useState<ActiveEdge[]>(() => snap?.edges ?? []);
+  const [placeKind, setPlaceKind] = useState<GStructureKind>("large");
   const [bridgeMode, setBridgeMode] = useState(false);
   const [bridgePending, setBridgePending] = useState<NodeId | null>(null);
   const [menu, setMenu] = useState<{ nodeId: NodeId; x: number; y: number } | null>(null);
@@ -200,9 +203,8 @@ export default function DesignerPage(): React.JSX.Element {
     if (to in degree) degree[to]++;
   }
 
-  const allIntra: [NodeId, NodeId][] = structures.flatMap((s) => intraCandidates(s.id));
+  const allIntra: [NodeId, NodeId][] = structures.flatMap((s) => intraCandidates(s));
 
-  // Close menu on outside click
   useEffect(() => {
     function onDown(e: MouseEvent): void {
       if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
@@ -213,7 +215,6 @@ export default function DesignerPage(): React.JSX.Element {
     return () => document.removeEventListener("pointerdown", onDown);
   }, []);
 
-  // Escape cancels bridge selection
   useEffect(() => {
     function onKey(e: KeyboardEvent): void {
       if (e.key === "Escape") {
@@ -225,14 +226,20 @@ export default function DesignerPage(): React.JSX.Element {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  // ── Actions ──────────────────────────────────────────────────────────────
 
   function addStructureAt(slot: number): void {
     const s: GStructure = {
       id: `S${nextId.current++}`,
       slot,
+      kind: placeKind,
       ...structCenter(slot),
     };
+    setStructures((prev) => [...prev, s]);
+    setNodes((prev) => [...prev, ...buildNodes(s)]);
+  }
+
+  function addSingleAt(cx: number, cy: number): void {
+    const s: GStructure = { id: `S${nextId.current++}`, slot: -1, kind: "single", cx, cy };
     setStructures((prev) => [...prev, s]);
     setNodes((prev) => [...prev, ...buildNodes(s)]);
   }
@@ -264,8 +271,13 @@ export default function DesignerPage(): React.JSX.Element {
     }
   }
 
+  function isBridgePoint(node: GNode): boolean {
+    const struct = structures.find((s) => s.id === node.structId);
+    return !!struct && node.ring === outerRing(struct.kind) && node.type !== null;
+  }
+
   function handleBridgeClick(node: GNode): void {
-    if (node.ring !== 3 || node.type === null) return;
+    if (!isBridgePoint(node)) return;
     if (!bridgePending) {
       setBridgePending(node.id);
       return;
@@ -304,7 +316,14 @@ export default function DesignerPage(): React.JSX.Element {
     );
   }
 
-  function handleSvgClick(): void {
+  function handleSvgClick(e: React.MouseEvent<SVGSVGElement>): void {
+    if (!bridgeMode && placeKind === "single") {
+      const rect = e.currentTarget.getBoundingClientRect();
+      const cx = Math.round((e.clientX - rect.left) * (W / rect.width));
+      const cy = Math.round((e.clientY - rect.top) * (H / rect.height));
+      addSingleAt(cx, cy);
+      return;
+    }
     setMenu(null);
     if (bridgeMode) setBridgePending(null);
   }
@@ -389,15 +408,21 @@ export default function DesignerPage(): React.JSX.Element {
             viewBox={`0 0 ${W} ${H}`}
             width={W}
             height={H}
-            style={{ display: "block", userSelect: "none", minWidth: W }}
+            style={{
+              display: "block",
+              userSelect: "none",
+              minWidth: W,
+              cursor: !bridgeMode && placeKind === "single" ? "crosshair" : "default",
+            }}
             onClick={handleSvgClick}
           >
             <rect x="0" y="0" width={W} height={H} fill="rgb(8,12,30)" />
-            {/* Empty slot ghosts — click to place a structure */}
-            {!bridgeMode && Array.from({ length: 8 }, (_, i) => i + 1).map((slot) => {
+            {/* Empty slot ghosts — only for large/small; single uses canvas click */}
+            {!bridgeMode && placeKind !== "single" && Array.from({ length: 8 }, (_, i) => i + 1).map((slot) => {
               if (structures.some((s) => s.slot === slot)) return null;
               const { cx, cy } = structCenter(slot);
               const label = SLOT_LABELS[slot];
+              const ghostR = placeKind === "small" ? RADII[1] : RADII[3];
               return (
                 <g
                   key={`ghost-${slot}`}
@@ -407,7 +432,7 @@ export default function DesignerPage(): React.JSX.Element {
                   <circle
                     cx={cx}
                     cy={cy}
-                    r={RADII[3]}
+                    r={ghostR}
                     fill="none"
                     stroke="rgba(100,170,255,0.05)"
                     strokeWidth={1}
@@ -434,7 +459,7 @@ export default function DesignerPage(): React.JSX.Element {
                   </text>
                   <text
                     x={cx}
-                    y={cy - RADII[3] - 6}
+                    y={cy - ghostR - 6}
                     textAnchor="middle"
                     fontSize={9}
                     fill="rgba(100,170,255,0.2)"
@@ -571,8 +596,7 @@ export default function DesignerPage(): React.JSX.Element {
                 ? COLORS[node.type]
                 : "rgba(100,170,255,0.28)";
               const deg = degree[node.id] ?? 0;
-              const isBridgeable =
-                bridgeMode && node.ring === 3 && node.type !== null;
+              const isBridgeable = bridgeMode && isBridgePoint(node);
               const isPending = node.id === bridgePending;
               return (
                 <g
@@ -717,10 +741,39 @@ export default function DesignerPage(): React.JSX.Element {
             </button>
           </div>
 
+          {/* Place kind */}
+          {!bridgeMode && (
+            <div>
+              <div className="section-header mb-2">Place</div>
+              <div className="flex gap-1.5">
+                {(["large", "small", "single"] as GStructureKind[]).map((k) => (
+                  <button
+                    key={k}
+                    onClick={() => setPlaceKind(k)}
+                    className="flex-1 text-[9px] py-1.5 rounded font-semibold tracking-wide uppercase"
+                    style={modeButtonStyle(placeKind === k, "rgba(91,140,255,0.95)")}
+                  >
+                    {k}
+                  </button>
+                ))}
+              </div>
+              {placeKind === "single" && (
+                <p className="mt-1.5 text-[10px]" style={{ color: "rgba(100,170,255,0.35)" }}>
+                  Click anywhere on the canvas
+                </p>
+              )}
+              {placeKind !== "single" && structures.length < MAX_STRUCTURES && (
+                <p className="mt-1.5 text-[10px]" style={{ color: "rgba(100,170,255,0.35)" }}>
+                  Click a + on the canvas
+                </p>
+              )}
+            </div>
+          )}
+
           {/* Instructions */}
           <div
             className="rounded-lg p-3 text-[11px] leading-relaxed space-y-1.5"
-            style={{ background: "rgba(10,18,55,0.7)", border: PANEL_BORDER }}
+            style={{ background: "rgba(255,255,255,0.09)", border: PANEL_BORDER }}
           >
             {!bridgeMode ? (
               <>
@@ -741,8 +794,8 @@ export default function DesignerPage(): React.JSX.Element {
               <>
                 <p style={{ color: "#f59e0b", fontWeight: 600 }}>Bridge mode</p>
                 <p style={{ color: TEXT_COLOR }}>
-                  Click a <span style={{ color: "#f59e0b" }}>ring 3</span> node,
-                  then another ring 3 node from a different structure.
+                  Click an <span style={{ color: "#f59e0b" }}>outer ring</span> node,
+                  then one from a different structure.
                 </p>
                 <p style={{ color: TEXT_COLOR }}>Click a bridge to remove it.</p>
                 <p style={{ color: MUTED_COLOR, fontSize: 10 }}>Esc to cancel</p>
@@ -769,6 +822,12 @@ export default function DesignerPage(): React.JSX.Element {
                   >
                     {s.id}
                   </span>
+                  <span
+                    className="text-[9px] uppercase tracking-wide"
+                    style={{ color: "rgba(100,170,255,0.3)" }}
+                  >
+                    {s.kind}
+                  </span>
                   {structures.length > 1 && (
                     <button
                       onClick={() => removeStructure(s.id)}
@@ -779,14 +838,6 @@ export default function DesignerPage(): React.JSX.Element {
                   )}
                 </div>
               ))}
-              {structures.length < MAX_STRUCTURES && (
-                <p
-                  className="text-[10px] text-center py-1"
-                  style={{ color: "rgba(100,170,255,0.25)" }}
-                >
-                  Click a + on the canvas
-                </p>
-              )}
             </div>
           </div>
 

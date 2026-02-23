@@ -1,7 +1,7 @@
 "use client";
 
+import { GridDesignProvider } from "@/features/admin/design-grid-sphere/context";
 import { PlayerProvider } from "@/features/player/context";
-import { GridDesignProvider } from "@/features/grid-design/context";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (

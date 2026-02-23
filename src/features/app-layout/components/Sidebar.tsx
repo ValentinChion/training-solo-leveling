@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Dumbbell, Grid3x3, Scroll, PenLine } from "lucide-react";
+import { Home, Dumbbell, Grid3x3, Scroll, Sparkles, PenLine } from "lucide-react";
 import { motion } from "motion/react";
 
 import {
@@ -22,6 +22,7 @@ const NAV_ITEMS = [
   { href: "/workouts", label: "Workouts", icon: Dumbbell },
   { href: "/grid", label: "Dokkaebi's Bag", icon: Grid3x3 },
   { href: "/scenarios", label: "Scenarios", icon: Scroll },
+  { href: "/plan", label: "Plan", icon: Sparkles },
 ] as const;
 
 const ADMIN_ITEMS = [

@@ -1,5 +1,7 @@
 // ── Geometry constants ────────────────────────────────────────────────────────
 
+import { GraphEdge, GraphNode } from "@/features/sphere-grid/components/GraphCanvas";
+
 export const RADII = [0, 60, 118, 175] as const;
 export const NODE_R = 11;
 // Radial layout: hub at center, up to 8 surrounding structures at compass positions.
@@ -41,9 +43,12 @@ export interface GNode {
   type: SphereType | null;
 }
 
+export type GStructureKind = "large" | "small" | "single";
+
 export interface GStructure {
   id: string;
-  slot: number; // 0 = hub, 1–8 = N, NE, E, SE, S, SW, W, NW
+  slot: number; // 0 = hub, 1–8 = N, NE, E, SE, S, SW, W, NW; -1 = free-placed
+  kind: GStructureKind;
   cx: number;
   cy: number;
 }
@@ -54,4 +59,18 @@ export interface ActiveEdge {
   from: NodeId;
   to: NodeId;
   kind: EdgeKind;
+}
+
+export interface DesignerSnapshot {
+  structures: GStructure[];
+  nodes: GNode[];
+  edges: ActiveEdge[];
+  nextId: number;
+}
+
+export interface GridDesign {
+  nodes: GraphNode[];
+  edges: GraphEdge[];
+  center: { x: number; y: number };
+  designer: DesignerSnapshot;
 }

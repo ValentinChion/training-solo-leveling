@@ -12,7 +12,15 @@ See [docs/orv-lore.md](docs/orv-lore.md) for the full ORV lore and progression s
 - React Context + useReducer for state management (no extra deps), structured for future DB integration
 
 ## Design Decisions
-- **FFX theme** — rich luminous blues (NOT gloomy near-black), blue primary accent (NOT violet). See [docs/design-system.md](docs/design-system.md) and `.claude/skills/ffx-design/SKILL.md` for the full design reference
+- **FFX theme** — rich luminous blues, blue primary accent (NOT violet). See [docs/design-system.md](docs/design-system.md) and `.claude/skills/ffx-design/SKILL.md` for the full design reference. Note: the ffx-design skill describes a *dark* midnight-blue background — **our actual implementation uses a lighter lavender atmosphere instead** (see below).
+- **Page background / atmosphere** — The page background is a **soft lavender-blue diagonal gradient** (`#9aa4c8 → #8089b8 → #7078b0 → #636ea4`, 150°). This is set as a CSS `background` shorthand directly on `:root` (NOT as `--background`, and NOT via `@apply bg-background` on body — that line is commented out intentionally). **Never replace this with a dark background.** The lavender creates the signature "world atmosphere" — a warm mid-tone blue-violet sky that the whole UI floats in.
+- **Panel style: frosted glass** — All surfaces use a frosted glass treatment: `bg-white/[0.12] backdrop-blur-[16px] border border-white/20`, hovering to `bg-white/[0.17] border-white/30`. This creates a soft, airy feel — panels look like frosted panes floating in the lavender atmosphere. Do NOT use dark navy gradients (`rgba(20,40,100,...)`) for panels.
+- **Subtle inner panels** (e.g. instruction boxes, list items): lighter frosted — `rgba(255,255,255,0.09)` bg, `rgba(255,255,255,0.15)` border.
+- **Dark-on-dark exception** — Code/output blocks stay semi-dark: `rgba(0,0,0,0.25)` bg, `rgba(255,255,255,0.10)` border. They're terminal-style and need high contrast for text.
+- **Sidebar** — fully transparent/dissolved into the lavender background. Nav items float as recessive text; only the active item gets a radial corona highlight. No panel, no border, no box.
+- **Header** — transparent, no background fill. Blends with the lavender sky; only the bottom border (`border-white/[0.07]`) marks its boundary.
+- **Text on frosted glass** — use white-based colors: `rgba(255,255,255,0.85)` for labels, `rgba(255,255,255,0.55)` for secondary text, `rgba(255,255,255,0.38)` for muted. Avoid low-opacity blue text (`rgba(100,170,255,0.35)`) — it lacks contrast on the lightened frosted panel.
+- **shadcn Card** (`components/ui/shadcn/card.tsx`) — already applies the frosted glass base. Use `<Card>` directly; the style comes from the component's default className.
 - Full ORV system: stats, skills, stigmas, scenarios, constellations, stories, coins
 - **Sphere Grid / Dokkaebi's Bag** — graph-based canvas with pan/zoom (div + CSS transform, non-passive wheel), SVG edges. State model: `currentNode` (position), `visitedNodes` (attained), `activatedEdges` (traversed paths), `activatedNodes` (filled spheres). **Moving ≠ activating** — spheres only fill when explicitly spending resources.
 - Two-tier decay: idle stats drain coins first (3-day grace); stat loss only when coins depleted

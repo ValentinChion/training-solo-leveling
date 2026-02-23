@@ -3,10 +3,10 @@ import { Cinzel, Rajdhani, Geist_Mono } from "next/font/google";
 
 import { TooltipProvider } from "@/components/ui/shadcn/tooltip";
 import { SidebarInset, SidebarProvider } from "@/components/ui/shadcn/sidebar";
-import { AppSidebar } from "@/components/features/app-layout/Sidebar";
-import { AppHeader } from "@/components/features/app-layout/Header";
+import { AppHeader } from "@/features/app-layout/components/Header";
 import { Providers } from "@/components/providers";
 import "./globals.css";
+import { AppSidebar } from "@/features/app-layout/components/Sidebar";
 
 const cinzel = Cinzel({
   variable: "--font-display",
@@ -38,9 +38,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Providers>
             <SidebarProvider>
               <AppSidebar />
-              <SidebarInset>
+              <SidebarInset className="overflow-hidden">
                 <AppHeader />
-                <main className="flex-1 p-6">{children}</main>
+                <main className="flex-1 min-w-0 overflow-auto p-6">{children}</main>
               </SidebarInset>
             </SidebarProvider>
           </Providers>

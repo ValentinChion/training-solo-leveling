@@ -5,9 +5,9 @@ import { motion } from "motion/react";
 import { HyperText } from "@/components/ui/magicui/hyper-text";
 import { SphereIcon } from "@/components/orv/sphere-icon";
 import { SPHERE_TYPES, type SphereType } from "@/lib/orv/constants";
-import { GraphCanvas, type GraphNode, type GraphEdge } from "@/components/grid/graph-canvas";
+import { GraphCanvas, type GraphNode, type GraphEdge } from "@/features/sphere-grid/components/GraphCanvas";
 import { usePlayer } from "@/features/player/context";
-import { useGridDesign } from "@/features/grid-design/context";
+import { useGridDesign } from "@/features/admin/design-grid-sphere/context";
 
 // Four linear arms radiating from the hub — each node has at most 2 connections.
 // The hub (C) is the only node with degree > 2 (one edge per arm).
@@ -97,8 +97,9 @@ export default function GridPage(): React.JSX.Element {
           transition={{ duration: 0.35, delay: 0.15 + SPHERE_TYPES.length * 0.06, ease: EASE }}
           className="flex items-center gap-2 px-3 py-1.5 rounded-lg"
           style={{
-            background: "linear-gradient(135deg, rgba(20,40,100,0.6) 0%, rgba(10,18,55,0.7) 100%)",
-            border: "1px solid rgba(91,140,255,0.3)",
+            background: "rgba(255,255,255,0.14)",
+            border: "1px solid rgba(255,255,255,0.22)",
+            backdropFilter: "blur(16px)",
           }}
         >
           <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden>
